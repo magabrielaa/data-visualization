@@ -1,6 +1,6 @@
-#GABRIELA AYALA
+# GABRIELA AYALA
 
-###Hello. :wave:
+### Hello. :wave:
 
 I am a 2nd year MSCAPP student at the University of Chicago. I am from Ecuador and I absolutely **love dogs and chocolate**. I have three chihuahuas and one of them, Ramona, lives with me here in Chicago.
 
