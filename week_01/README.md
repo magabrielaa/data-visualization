@@ -10,4 +10,4 @@ I am looking forward to learn about different data visualization techniques and 
 
 ![my data selfie](my_data_selfie.jpg)
 
-[^1] More info on data selfies [here:](https://ideas.ted.com/how-to-draw-your-own-selfie-using-your-personal-data/)
+[^1]: More info on data selfies [here:](https://ideas.ted.com/how-to-draw-your-own-selfie-using-your-personal-data/)
