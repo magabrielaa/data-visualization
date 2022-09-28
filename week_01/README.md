@@ -8,6 +8,6 @@ I am looking forward to learn about different data visualization techniques and 
 
 ---
 
-![my data selfie](data_selfie.jpg)
+![my data selfie](/Users/mariagabrielaayala/Desktop/Autumn 2022/Data Visualization/CAPP30239_FA22/week_01/data_selfie.jpg)
 
 [^1] More info on data selfies [here:](https://ideas.ted.com/how-to-draw-your-own-selfie-using-your-personal-data/)
