@@ -4,7 +4,7 @@
 This is my repository for my Data Visualization for Policy Analysis course. It will contain weekly homework and project assignments throughout the Fall quarter from September to December 2022.
 
 ## Goal
-To acquire data visualization 📊 📈 📉 skills that can be used to engage people with public policy issues. I am interested in data story-telling from an accessible standpoint that can reach a variety of audiences. 
+To acquire data visualization 📊 📈 📉 skills that can be used to engage people with challenging public policy and social impact issues. I am interested in data story-telling from an accessible standpoint that can reach a variety of audiences. 
 
 ## Homework Assignments
 
