@@ -8,14 +8,15 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 
 ## Homework Assignments
 
-### Week 01:
+### Week 1:
 - Data selfie
 
-### Week 02:
+### Week 2:
 - **Project #1:** Dear Data visualization
-
-### Week 03:
 - Final Project Data
+
+### Week 3:
+
 
 ---
 ## Contact
