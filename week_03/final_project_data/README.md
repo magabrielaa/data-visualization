@@ -23,7 +23,7 @@ Ecuador joined the [Open Government Partnership (OGP)](https://www.opengovpartne
 
 **Description:** This is official government data from the Social Registry, an institutional registry that was created to record people and households living under poverty in order to provide them with access to public services and conditional cash transfer programs. 
 
-The data is published at the head of household level, with a total of 3'212,065 obsevations. I excluded observations categorized as "Not Poor", that is, belonging to income deciles 4-10, which reduces the number to 1.15 million heads of households.
+The data is published at the individual level, with a total of 3'212,065 observations. I excluded observations categorized as "Not Poor", that is, belonging to income deciles 4-10, which reduces the number to 1.15 million heads of households.
 
 To make the data more manageable for the project, I created an R script called `aggregate_data.R` to aggregate it by different variables of interest, which I then used to create the following csv files:
 
@@ -49,4 +49,4 @@ To make the data more manageable for the project, I created an R script called `
 
 **Potential data points:** I have already pre-processed potential data points in the csv files that I generated from the complete 3.2 million observations dataset. Other data points I will not be focusing on include: marital status, nationality, smaller geographical divisions like parish and canton).
 
-**Possible concerns:** Overall the data is clean and consistent. Rather than concerns, there is a limitation, mainly that the dataset contains observations of head of households under poverty who at some point either auto-registered or were registered by a third party in the Social Registry. It is therefore not a 100% comprehensive registry of all people under poverty in Ecuador. 
+**Possible concerns:** Overall the data is clean and consistent. Rather than concerns, there is a limitation, mainly that the dataset contains observations of people under poverty who at some point either auto-registered or were registered by a third party in the Social Registry. It is therefore not a 100% comprehensive registry of all people living under poverty in Ecuador. 
