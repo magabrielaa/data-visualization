@@ -56,7 +56,8 @@ To make the data more manageable for the project, I created an R script called `
 ## Ecuador province boundaries 
 In order to visualize poverty data in a map, I searched for a GeoJSON file that contains Ecuador's geographical divisions into 24 provinces.
 
-**Data Source:** Risk Management Secretariat [province boundaries](https://sgr-ecuador.carto.com/tables/provincias/public)
-**Format:** GeoJSON
+- **Data Source:** Risk Management Secretariat [province boundaries](https://sgr-ecuador.carto.com/tables/provincias/public)
+- **Format:** GeoJSON
+- **File:** `map.geojson`
 
 
