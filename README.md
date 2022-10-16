@@ -24,7 +24,5 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 2. **Final Project Data:** The data I scoped for my Final Project, and more detail on it is contained inside my `final_project_data` repo within `week_03`
 
 
-
----
 ## Contact
 Feel free to contact me through [LinkedIn](https://www.linkedin.com/in/mariagabrielaayala/)!
