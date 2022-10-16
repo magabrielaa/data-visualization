@@ -6,18 +6,20 @@ This is my repository for my Data Visualization for Policy Analysis course. It w
 ## Goal
 To acquire data visualization 📊 📈 📉 skills that can be used to engage people with challenging public policy and social impact issues. I am interested in data story-telling from an accessible standpoint that can reach a variety of audiences. 
 
-## Homework Assignments
+## Weekly Assignments
 
-### Week 1:
-- Data selfie
+### Week 1
+- **Data selfie**: A hand-drawn introductory [snapshot](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_01) of me.
 
-### Week 2:
-- **Project #1:** Dear Data visualization
-- Final Project Data
+### Week 2
+- JavaScript in-class tutorial
+- **Project #1:** For my *Dear Data* project, I tracked the sounds 🔉🔔🔉 around me for 5 days and manually created a [humanistic data visualization](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_02/dear_data)
 
-### Week 3:
+### Week 3
+- D3.js in-class tutorial
+- **Library visits bar chart**: Homework assignment creating a D3 [bar chart](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_03) on Chicago library visits in January 2022
 
 
 ---
 ## Contact
-Feel free to contact me through [LinkedIn](https://www.linkedin.com/in/mariagabrielaayala/)!
+Feel free to contact me through [LinkedIn](https://www.linkedin.com/in/mariagabrielaayala/) 📮
