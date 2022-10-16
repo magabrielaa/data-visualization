@@ -50,3 +50,13 @@ To make the data more manageable for the project, I created an R script called `
 **Potential data points:** I have already pre-processed potential data points in the csv files that I generated from the complete 3.2 million observations dataset. Other data points I will not be focusing on include: marital status, nationality, smaller geographical divisions like parish and canton).
 
 **Possible concerns:** Overall the data is clean and consistent. Rather than concerns, there is a limitation, mainly that the dataset contains observations of people under poverty who at some point either auto-registered or were registered by a third party in the Social Registry. It is therefore not a 100% comprehensive registry of all people living under poverty in Ecuador. 
+
+---
+
+## Ecuador province boundaries 
+In order to visualize poverty data in a map, I searched for a GeoJSON file that contains Ecuador's geographical divisions into 24 provinces.
+
+**Data Source:** Risk Management Secretariat [province boundaries](https://sgr-ecuador.carto.com/tables/provincias/public)
+**Format:** GeoJSON
+
+
