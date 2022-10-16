@@ -9,7 +9,7 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 ## Weekly Assignments
 
 ### Week 1
-- **Data selfie**: A hand-drawn introductory [snapshot](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_01) of me
+- **Data selfie**: A hand-drawn introductory [snapshot](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_02) of me
 
 ### Week 2
 - JavaScript in-class tutorial
