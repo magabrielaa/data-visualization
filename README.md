@@ -17,9 +17,9 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 
 ### Week 3
 - D3.js in-class tutorial
-- **Library visits bar chart**: Homework assignment creating a D3 [bar chart](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_03) on Chicago library visits in January 2022
+- **Library visits bar chart**: Homework assignment creating a D3 [bar chart](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_03) 📊 on Chicago library visits in January 2022
 
 
 ---
 ## Contact
-Feel free to contact me through [LinkedIn](https://www.linkedin.com/in/mariagabrielaayala/) 📮
+Feel free to contact me through [LinkedIn](https://www.linkedin.com/in/mariagabrielaayala/)!
