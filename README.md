@@ -24,6 +24,9 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 
 - **Final Project Data:** The data I scoped and pre-processed for my Final Project is on the characteristics of people living under moderate and extreme poverty in my homecountry, Ecuador. Further detail on this data  is contained inside my `final_project_data` repo within `week_03`
 
+### Week 4
+- [Horizontal bar](https://magabrielaa.github.io/CAPP30239_FA22/week_04/horizontal-bar.html) in D3.js
+
 
 ## Contact
 Feel free to contact me through [LinkedIn](https://www.linkedin.com/in/mariagabrielaayala/)!
