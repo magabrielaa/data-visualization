@@ -17,15 +17,14 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 - **Project #1:** For my *Dear Data* project, I tracked the sounds 🔉🔔🔉 around me for 5 days and manually created a [humanistic data visualization](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_02)
 
 ### Week 3
-- Introduction to D3.js
-    - D3.js in-class tutorial
+- D3.js in-class tutorial, my first [bar chart](https://magabrielaa.github.io/CAPP30239_FA22/week_03/index.html)
     
-    - **Library visits bar chart:** Homework assignment creating a D3 [bar chart](https://magabrielaa.github.io/CAPP30239_FA22/week_03/index.html) 📊 on Chicago library visits in January 2022
+- **Homework assignment:** [Library visits bar chart](https://magabrielaa.github.io/CAPP30239_FA22/week_03/homework.html) 📊 on Chicago library visits in January 2022
 
 - **Final Project Data:** The data I scoped and pre-processed for my Final Project is on the characteristics of people living under moderate and extreme poverty in my homecountry, Ecuador. Further detail on this data  is contained inside my `final_project_data` repo within `week_03`
 
 ### Week 4
-- [Horizontal bar](https://magabrielaa.github.io/CAPP30239_FA22/week_04/horizontal-bar.html) in D3.js
+- [Horizontal bar chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/horizontal-bar.html)
 
 
 ## Contact
