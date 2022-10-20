@@ -11,8 +11,10 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 ### Week 1
 - **Data selfie:** A hand-drawn introductory [snapshot](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_01) of me
 
+- **Intro to HTML and CSS:** [Frankenstein](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_02)
+
 ### Week 2
-- JavaScript in-class tutorial
+- JavaScript in-class [tutorial](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_01/index.html)
 
 - **Project #1:** For my *Dear Data* project, I tracked the sounds 🔉🔔🔉 around me for 5 days and manually created a [humanistic data visualization](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_02)
 
