@@ -11,10 +11,10 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 ### Week 1
 - **Data selfie:** A hand-drawn introductory [snapshot](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_01) of me
 
-- **Intro to HTML and CSS:** [Frankenstein](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_01/index.html)
+- **Intro to HTML and CSS:** [Frankenstein](https://magabrielaa.github.io/CAPP30239_FA22/week_01/index.html)
 
 ### Week 2
-- JavaScript in-class [tutorial](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_02/js_tutorial/index.html)
+- JavaScript in-class [tutorial](https://magabrielaa.github.io/CAPP30239_FA22/week_02/js_tutorial/index.html)
 
 - **Project #1:** For my *Dear Data* project, I tracked the sounds 🔉🔔🔉 around me for 5 days and manually created a [humanistic data visualization](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_02)
 
@@ -26,7 +26,7 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 - **Final Project Data:** The data I scoped and pre-processed for my Final Project is on the characteristics of people living under moderate and extreme poverty in my homecountry, Ecuador. Further detail on this data  is contained inside my `final_project_data` repo within `week_03`
 
 ### Week 4
-- [Horizontal bar chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/horizontal-bar.html)
+- [Horizontal bar chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/horizontal-bar.html) next to the bar chart created in week 3
 
 
 ## Contact
