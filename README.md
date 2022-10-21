@@ -28,6 +28,8 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 ### Week 4
 - [Horizontal bar chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/horizontal-bar.html) next to the bar chart created in week 3
 
+- **Homework assignment:** Canada 2020 long-term monthly interest rates [line chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/homework.html)
+
 
 ## Contact
 Feel free to contact me through [LinkedIn](https://www.linkedin.com/in/mariagabrielaayala/)!
