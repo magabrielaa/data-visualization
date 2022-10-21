@@ -10,6 +10,10 @@ const svg = d3.select("#line-chart")
     .append("svg")
     .attr("viewBox", [0, 0, width, height]); //ViewBox allows chart to grow dynamicaly
 
+const tooltip = d3.select('#line-chart')
+    .append('div')
+    .attr('class', 'tooltip');
+
 d3.csv('long-term-interest-canada.csv').then(data => { // promise to load data first, then run function
     
     let timeParse = d3.timeParse("%Y-%m") //parse string date format, parameter is current date format: YYYY-MM
@@ -20,23 +24,23 @@ d3.csv('long-term-interest-canada.csv').then(data => { // promise to load data f
     }
     
     // Set up scales
-    let x = d3.scaleTime() // scaleTime because month is a time variable
+    let xScale = d3.scaleTime() // scaleTime because month is a time variable
         .domain(d3.extent(data, d => d.Month)) // set domain from min to max month
         .range([margin.left, width - margin.right]); // xaxis drawing space
         
-    let y = d3.scaleLinear() // linear because interest rate is a continuous variable
+    let yScale = d3.scaleLinear() // linear because interest rate is a continuous variable
         .domain([0, d3.max(data, d => d.Num)]) // y scales always start at 0
         .range([height - margin.bottom, margin.top]); // yaxis drawing space
 
-    // Add x-axis
+    // Define xAxis
     svg.append("g") //append group element to the svg
         .attr("transform", `translate(0,${height - margin.bottom})`)
-        .call(d3.axisBottom(x).tickSizeOuter(0).tickSize(-width).tickPadding([5])); //tickSizeOuter(0) gets rid of over-extending axis, tickSize sets gridlines
+        .call(d3.axisBottom(xScale).tickSizeOuter(0).tickSize(-width).tickPadding([5])); //tickSizeOuter(0) gets rid of over-extending axis, tickSize sets gridlines
     
-    // Add y-axis
+    // Define yAxis
     svg.append("g")
         .attr("transform", `translate(${margin.left},0)`)
-        .call(d3.axisLeft(y).tickSizeOuter(0).tickSize(-width).tickFormat(d => d + "%")); //tickSizeOuter(0) gets rid of over-extending axis, tickSize sets gridlines
+        .call(d3.axisLeft(yScale).tickSizeOuter(0).tickSize(-width).tickFormat(d => d + "%")); //tickSizeOuter(0) gets rid of over-extending axis, tickSize sets gridlines
 
     // Set x-axis label
     svg.append("text")
@@ -60,8 +64,8 @@ d3.csv('long-term-interest-canada.csv').then(data => { // promise to load data f
     
     // Draw line
     let line = d3.line()
-        .x(d => x(d.Month))
-        .y(d => y(d.Num))
+        .x(d => xScale(d.Month))
+        .y(d => yScale(d.Num))
         .curve(d3.curveNatural); // curves the line to make it more smooth
     
     // Append path to SVG
@@ -77,8 +81,7 @@ d3.csv('long-term-interest-canada.csv').then(data => { // promise to load data f
     	.enter().append("circle")
         .attr("id", "circles")
         .attr("r", 3)
-        .attr("cx", function(d) { return x(d.Month); })
-        .attr("cy", function(d) { return y(d.Num); });
-
+        .attr("cx", function(d) { return xScale(d.Month); })
+        .attr("cy", function(d) { return yScale(d.Num); });
 
   });
