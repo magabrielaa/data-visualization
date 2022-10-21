@@ -23,7 +23,7 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
     
 - **Homework assignment:** [Library visits bar chart](https://magabrielaa.github.io/CAPP30239_FA22/week_03/homework.html) 📊 on Chicago library visits in January 2022
 
-- **Final Project Data:** The data I scoped and pre-processed for my Final Project is on the characteristics of people living under moderate and extreme poverty in my homecountry, Ecuador. Further detail on this data  is contained inside my `final_project_data` repo within `week_03`
+- **Final Project Data:** The data I scoped and pre-processed for my Final Project is on the characteristics of people living under moderate and extreme poverty in my homecountry, Ecuador. Further detail [here](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_03/final_project_data)
 
 ### Week 4
 - [Horizontal bar chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/horizontal-bar.html) next to the bar chart created in week 3
