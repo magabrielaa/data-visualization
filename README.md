@@ -28,7 +28,15 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 ### Week 4
 - [Horizontal bar chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/horizontal-bar.html) next to the bar chart created in week 3
 
-- **Homework assignment:** Canada 2020 long-term monthly interest rates [line chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/homework.html)
+- Time series charts
+
+    - [Line chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/line.html) of US long-term interest rates
+
+    - [Area chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/area.html) of US long-term interest rates
+    
+    - [Multiline chart] (https://magabrielaa.github.io/CAPP30239_FA22/week_04/multiline.html) of G7's long-term interest rates
+
+    - **Homework assignment:** [Line chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/homework.html) of Canada's monthly long-term interest rates in 2020
 
 
 ## Contact
