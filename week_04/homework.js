@@ -5,14 +5,10 @@
 const height = 500,
     width = 800,
     margin = ({ top: 15, right: 30, bottom: 35, left: 40 });
-    
-const svg = d3.select("#line-chart")
+
+const svg = d3.select("#line-chart") // create svg
     .append("svg")
     .attr("viewBox", [0, 0, width, height]); //ViewBox allows chart to grow dynamicaly
-
-const tooltip = d3.select('#line-chart')
-    .append('div')
-    .attr('class', 'tooltip');
 
 d3.csv('long-term-interest-canada.csv').then(data => { // promise to load data first, then run function
     
