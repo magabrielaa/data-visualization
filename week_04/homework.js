@@ -42,7 +42,7 @@ d3.csv('long-term-interest-canada.csv').then(data => { // promise to load data f
     svg.append("text")
         .attr("class", "label")
         .attr("text-anchor", "end")
-        .attr("x", 400) //move position of label left/right
+        .attr("x", 390) //move position of label left/right
         .attr("y", height)
         .attr("dx", "0.5em") //shifting attributes
         .attr("dy", "-0.5em") //shifting attributes
@@ -52,7 +52,7 @@ d3.csv('long-term-interest-canada.csv').then(data => { // promise to load data f
     svg.append("text")
         .attr("class", "label")
         .attr("text-anchor", "end")
-        .attr("x", -190) //move position of label up/down
+        .attr("x", -185) //move position of label up/down
         .attr("dx", "-0.5em")
         .attr("y", 10)
         .attr("transform", "rotate(-90)") // rotates label vertically
