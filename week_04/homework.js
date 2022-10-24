@@ -31,12 +31,12 @@ d3.csv('long-term-interest-canada.csv').then(data => { // promise to load data f
     // Define xAxis
     svg.append("g") //append group element to the svg
         .attr("transform", `translate(0,${height - margin.bottom})`)
-        .call(d3.axisBottom(xScale).tickSizeOuter(0).tickSize(-width).tickPadding([5])); //tickSizeOuter(0) gets rid of over-extending axis, tickSize sets gridlines
+        .call(d3.axisBottom(xScale).tickSizeOuter(0).tickSize(-width).tickPadding([5]).tickFormat(d3.timeFormat("%b"))); //tickSizeOuter(0) gets rid of over-extending axis, tickSize sets gridlines
     
     // Define yAxis
     svg.append("g")
         .attr("transform", `translate(${margin.left},0)`)
-        .call(d3.axisLeft(yScale).tickSizeOuter(0).tickSize(-width).tickFormat(d => d + "%")); //tickSizeOuter(0) gets rid of over-extending axis, tickSize sets gridlines
+        .call(d3.axisLeft(yScale).tickSizeOuter(0).tickSize(-width).tickPadding([-8]).tickFormat(d => d + "%")); //tickSizeOuter(0) gets rid of over-extending axis, tickSize sets gridlines
 
     // Set x-axis label
     svg.append("text")
@@ -52,7 +52,7 @@ d3.csv('long-term-interest-canada.csv').then(data => { // promise to load data f
     svg.append("text")
         .attr("class", "label")
         .attr("text-anchor", "end")
-        .attr("x", -160) //move position of label up/down
+        .attr("x", -190) //move position of label up/down
         .attr("dx", "-0.5em")
         .attr("y", 10)
         .attr("transform", "rotate(-90)") // rotates label vertically
