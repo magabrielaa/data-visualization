@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importing Observable Code Snippet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Assistant', sans-serif;
+        }
+        .container {
+            max-width: 1040px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Importing Observable Code Snippet: Beeswarm</h1>
+        <p>
+            This code is an example of how to import 
+            charts from Observable into your own html.
+            Observable has several ready made chart functions 
+            that you can copy and paste locally. This
+            chart is a <a href="https://observablehq.com/@d3/beeswarm?collection=@d3/charts">
+            beeswarm plot</a>. Here are the 
+            steps to use Observable locally: (1) 
+            <a href="https://observablehq.com/@d3/charts?collection=@d3/charts">
+            Find chart</a> (2) Copy/paste Observable function 
+            (3) Import data (4) Call function with optional 
+            params (5) Append to page.
+        </p>
+        <div id="chart"></div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="observable.js"></script>
+</body>
+</html>
