@@ -23,7 +23,7 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
     
 - **Homework assignment:** [Library visits bar chart](https://magabrielaa.github.io/CAPP30239_FA22/week_03/homework.html) 📊 on Chicago library visits in January 2022
 
-- **Final Project Data:** The data I scoped and pre-processed for my Final Project is on the characteristics of people living under moderate and extreme poverty in my homecountry, Ecuador. Further detail [here](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_03/final_project_data)
+- **Final Project Data:** The data I scoped and pre-processed for my Final Project is on the characteristics of people living under moderate and extreme poverty in my homecountry, Ecuador. Further detail [here](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/data)
 
 ### Week 4
 - [Horizontal bar chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/horizontal-bar.html) next to the bar chart created in week 3
@@ -38,6 +38,9 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 
     - **Homework assignment:** [Line chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/homework.html) of Canada's monthly long-term interest rates in 2020
 
+### Week 5
+- [Histogram] (https://magabrielaa.github.io/CAPP30239_FA22/week_05/histogram-annotation.html) of the weather by month in Chicago (2022)
+- [Scatterplot] (https://magabrielaa.github.io/CAPP30239_FA22/week_05/scatterplot.html) of the distribution of penguin weight by flipper length
 
 ## Contact
 Feel free to contact me through [LinkedIn](https://www.linkedin.com/in/mariagabrielaayala/)!
