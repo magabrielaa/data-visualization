@@ -1,0 +1,39 @@
+body{
+    font-family: 'Lato', sans-serif;
+    margin:auto;
+    text-align: center;
+}
+
+h1{
+    margin:1em;
+}
+
+h2 {
+    margin:1em;
+}
+
+
+.chart-container {
+    width: 800px;
+    margin:auto;
+}
+
+.labels{
+    font-size: 14px;
+    
+}
+
+.x-label{
+    font-size: 18px;
+    
+}
+
+.y-label{
+    font-size: 18px;
+    
+}
+
+.yaxis{
+    font-size: 14px;
+    
+}
