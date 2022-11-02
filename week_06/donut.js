@@ -13,6 +13,11 @@ d3.json("shootings_data.json").then(d => {
     .rollup(function(v) { return v.length; })
     .entries(d);
     console.log("MY DATA IS,", data)
+
+    for (let d of data) {
+      d.value = +d.value; //convert to number, in console if blue = it's a number
+  }
+    console.log("Check if value is now numbers", data)
     
     // Observable function:
     let chart = DonutChart(data, {
