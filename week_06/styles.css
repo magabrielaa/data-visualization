@@ -9,9 +9,12 @@ h1{
 }
 
 h2 {
-    margin:1em;
+    margin:2em;
 }
 
+.pie-label{
+    font-family: 'Lato', sans-serif;
+}
 
 .chart-container {
     width: 800px;
@@ -37,3 +40,16 @@ h2 {
     font-size: 14px;
     
 }
+
+#chart3{
+    width: 800px;
+}
+
+
+#chart2{
+    width: 700px;
+}
+
+/* #chart1{
+    border:solid 1px red;
+} */
