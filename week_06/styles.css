@@ -22,34 +22,39 @@ h2 {
 }
 
 .labels{
-    font-size: 14px;
+    font-size: 12px;
     
 }
 
 .x-label{
-    font-size: 18px;
+    font-size: 14px;
     
 }
 
 .y-label{
-    font-size: 18px;
+    font-size: 14px;
     
 }
 
-.yaxis{
-    font-size: 14px;
+.xaxis text{
+    font-size: 13px;
+}
+
+.yaxis text{
+    font-size: 13px;
     
+}
+
+
+#chart1{
+    width: 800px;
+    /* border:solid 1px red; */
+}
+
+#chart2{
+    width: 800px;
 }
 
 #chart3{
     width: 800px;
 }
-
-
-#chart2{
-    width: 700px;
-}
-
-/* #chart1{
-    border:solid 1px red;
-} */

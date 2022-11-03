@@ -13,7 +13,6 @@ d3.json("shootings_data.json").then(d => {
     .key(function(a) { return a.Race; })
     .rollup(function(v) { return v.length; })
     .entries(d);
-    console.log(data)
 
     data.sort((a, b) => b.value - a.value);
 
@@ -22,9 +21,9 @@ d3.json("shootings_data.json").then(d => {
     .range([margin.left, width - margin.right]);
 
     let y = d3.scaleBand()
-    .domain(data.map(d => {return d.key == "" ? "NA": d.key}))
+    .domain(data.map(d => d.key))
     .range([margin.top, height - margin.bottom])
-    .padding(0.1);
+    .padding(0.2);
 
     svg.append("g")
     .attr("transform", `translate(0,${height - margin.bottom + 5})`) // move location of axis
@@ -50,6 +49,7 @@ d3.json("shootings_data.json").then(d => {
     .attr("height", y.bandwidth());
 
     bar.append('text') // add labels
+    .text(d => d.value) 
     .attr('x', d => margin.left + x(d.value) - 10)
     .attr('y', d => y(d.key) + (y.bandwidth()/2))
     .attr('text-anchor', 'end')
