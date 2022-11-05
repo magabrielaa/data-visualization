@@ -42,5 +42,8 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 - [Histogram](https://magabrielaa.github.io/CAPP30239_FA22/week_05/histogram-annotation.html) of the weather by month in Chicago (2022)
 - [Scatterplot](https://magabrielaa.github.io/CAPP30239_FA22/week_05/scatterplot.html) of the distribution of penguin weight by flipper length
 
+### Week 6
+- [Three charts](https://magabrielaa.github.io/CAPP30239_FA22/week_06/homework/index.html) of fatal use of police force in the US in 2015
+
 ## Contact
 Feel free to contact me through [LinkedIn](https://www.linkedin.com/in/mariagabrielaayala/)!
