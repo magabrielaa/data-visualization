@@ -32,9 +32,9 @@ d3.json('climate-jan.json').then((data) => {
   
   console.log(bins)
 
-  let g = binGroups.selectAll("g") //selects all previously created g elements
+  let g = binGroups.selectAll("g") //selects all previously created g elements. Joins can be separated by enter, join and exit. One bin for each group
     .data(bins)
-    .join("g"); // joins data to g element
+    .join("g"); // joins data to g element, joining rect and text
 
   g.append("rect")
     .attr("x", d => x(d.x0) + (padding / 2)) //dividing padding in half to make bins closer

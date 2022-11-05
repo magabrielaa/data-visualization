@@ -1,6 +1,7 @@
 /* Horizontal bar chart for COVID country cases */
 
 d3.csv("covid.csv").then(data => {
+    console.log(data)
 
     for (let d of data) {
         d.cases = +d.cases; //force a number

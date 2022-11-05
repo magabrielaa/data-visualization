@@ -27,7 +27,7 @@ Promise.all([
   
     svg.append("g")
       .attr("transform", `translate(0,${height - margin.bottom + 5})`)
-      .call(d3.axisBottom(x));
+      .call(d3.axisBottom(x)); //see in dev tools the elements it creates
   
     const binGroups = svg.append("g");
   
