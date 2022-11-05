@@ -1,0 +1,68 @@
+* {
+    font-family: 'Work Sans',Arial, Helvetica, sans-serif;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .container {
+    width: 1040px;
+    margin: 0 auto;
+  }
+
+  #chart {
+    width: 100%;
+    text-align: center;
+  }
+
+  svg {
+    max-height: 100vh;
+  }
+
+  .svg-tooltip {
+    background: rgba(69, 77, 93, .9);
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: none;
+    max-width: 320px;
+    padding: 1rem;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: pre;
+    z-index: 300;
+    visibility: hidden;
+  }
+
+  .domain {
+    display: none;
+  }
+  
+  line {
+    stroke: #ddd;
+  }
+
+  svg text {
+    font-size: 12px;
+  }
+  
+  .ring svg text {
+    font-size: 12px;
+  }
+  
+  .x-axis text {
+    transform: translateY(5px);
+  }
+  
+  .y-axis text {
+    transform: translateX(-5px);
+  }
+
+  foreignObject p {
+    font-size: 10px;
+  }
+
+ 
