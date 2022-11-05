@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Deaths</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Fatal Use of Police Force (2015)</h1>
+    <p> The data used in these visualizations comes from the
+        <a href="https://www.washingtonpost.com/graphics/national/police-shootings/">Washington Post Police Shooting Database</a>.
+    It contains records of over 1,500 people who were shot and killed by police officers in the US in 2015.</p>
+    <div id="container">
+        <h2>Police brutality, victims by race</h2>
+        <div id="horizontal-bar" class="chart-container"></div>
+        <p class="content">First, I decided to examine the distribution of fatal shootings by race. I replaced those records for which
+            no race was recorded, to "NA". I opted for a horizontal bar chart sorted by the counts of shootings to more
+            easily visualize which groups have been victimized the most. Since there are 7 categories in total, it is a 
+            manageable amount of bars to see at a time.  
+        </p>
+        <p class="content"> 
+            The majority of shootings, from this database, have been to white individuals, followed by Black and Hispanic.
+            Data on the uncategorized records is needed to get a full picture. Out of the <span>114 uncategorized records</span>, 
+            it is possible more minorities have been affected than at first glance.
+        </p>
+        <hr>
+        <h2>Police brutality, victims by mental illness </h2>
+        <div id="pie" class="chart-container"></div>
+        <p>
+            An interesting variable in the databse is "Mental_illness". I choose a donut chart because there are only two
+            categories "Yes" or "No", which makes easy to visualize the proportions, without causing confusion to the 
+            human eye.
+        </p>
+        <p>
+            The data shows that <span>327 victims</span> of fatal shootings, or <span>21%</span>, had a mental illness. This is an alarming proportion
+            and can be indicative of a lack of managing mental illness among the police force. More data is needed for other 
+            years to see if this proportion is consistent or increasing in size.  
+        </p>
+        <hr>
+        <h2>Police brutality, victims by age <br/>and manner of death (monthly)</h2>
+        <div id="scatterplot" class="chart-container"></div>
+        <p>For my last chart, I wanted to convey more information in a single visualization over time, so I opted for a
+            scatterplot. The data shows that fatal use of police force was evenly spread throughout the months of 2015.
+            There does not appear to be a time of the year where the problem exacerbates for different age groups, which 
+            makes a focalized policy difficult.
+        </p>
+        <p>
+            The data shows <span>victims of all ages</span>, from the young to the elderly, with an even spread between
+            the ages of 20 and 50.
+
+        </p>
+        <p>
+            The use of color/symbols helps to highlight the story that police brutality victims have disproportionely
+            died by <span>shooting</span>. Guns are intended to severely wound or kill, unlike tasers, which are relatively
+            less mortal. This is concerning evidence of excessive use of police force. A comparison between years, instead
+            of months would be helpful to identify whether this pattern is increasing over time.
+        </p>
+    </div>
+</body>
+<script src="https://d3js.org/d3-collection.v1.min.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="horizontal-bar.js"></script>
+<script src="pie.js"></script>
+<script src="scatterplot_2.js"></script>
+</html>
