@@ -30,7 +30,7 @@ function PieChart(data, {
     height = 400, // outer height, in pixels
     innerRadius = 0, // inner radius of pie, in pixels (non-zero for donut)
     outerRadius = Math.min(width, height) / 2, // outer radius of pie, in pixels
-    labelRadius = (innerRadius * 0.2 + outerRadius * 0.8), // center radius of labels
+    labelRadius = (innerRadius * 0.05 + outerRadius * 0.8), // center radius of labels
     format = ",", // a format specifier for values (in the label)
     names, // array of names (the domain of the color scale)
     colors, // array of colors for names
