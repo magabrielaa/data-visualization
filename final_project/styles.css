@@ -1,0 +1,16 @@
+* {
+    font-family: 'Work Sans',Arial, Helvetica, sans-serif;
+  }
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin:auto;
+    text-align: center;
+    margin:2em;
+}
+
+h2 {
+    text-align: left;
+    margin:2em;
+}

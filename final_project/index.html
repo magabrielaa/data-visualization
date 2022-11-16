@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Charts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Final Project: 3 Charts</h1>
+    <div id="container">
+        <h2> Extreme Poverty, by Province</h2>
+        <div id="legend"></div> <!-- uses library to load color legend -->
+        <div id="chart1" class="chart-container"></div>
+        <h2> Chart 2</h2>
+        <div id="chart2" class="chart-container"></div>
+        <h2> Chart 3</h2>
+        <div id="chart3" class="chart-container"></div>
+    </div>   
+</body>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="data/d3-color-legend.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script> <!-- topojson library, will use feature to map polygons-->
+<script src="chart1.js"></script>
+<!-- <script src="chart2.js"></script>
+<script src="chart3.js"></script> -->
+</html>
