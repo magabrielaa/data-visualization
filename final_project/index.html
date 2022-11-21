@@ -10,21 +10,87 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Final Project: 3 Charts</h1>
+    <h1>Poverty in Ecuador: An Overview</h1>
+    <h2 class="section">Let's look at the geographical distribution of poverty</h2>
     <div id="container">
-        <h2> Extreme Poverty, by Province</h2>
-        <div id="legend"></div> <!-- uses library to load color legend -->
-        <div id="chart1" class="chart-container"></div>
-        <h2> Chart 2</h2>
-        <div id="chart2" class="chart-container"></div>
-        <h2> Chart 3</h2>
-        <div id="chart3" class="chart-container"></div>
+        <div id="map-parent">
+            <div class = "map">
+                <h2> Poverty appears to be concentrated in the coastal region</h2>
+                <div id="legend1" class="legend"></div>
+                <div id="chart1" class="chart-container"></div>
+                <p> This first chart shows poverty normalized per 10.000 habitants and it shows
+                    that poverty is concentrated in three provinces in the Coastal Region:
+                    Esmeraldas, Guayas, and Manabí.
+                </p>
+            </div>
+            <div class="map">
+                <h2> But it is evenly spread as a proportion of population size</h2>
+                <div id="legend2" class="legend"></div>
+                <div id="chart2" class="chart-container"></div>
+                <p> A look at the distribution of poverty by population shows us that that poverty
+                    is widespread through Ecuador, not just in the Coast but also in the Highlands and
+                    the Amazon. This more concerning picture suggests social policy should be focused in 
+                    Esmeraldas and Bolivar.
+                    
+                </p>
+            </div>
+        </div>
+        <br>
+        <h2 class="section">How is poverty distributed by gender?</h2>
+        <div id="gender-prop-parent">
+            <div id="gender-desc">
+                <p>The distribution of poverty in Ecuador between males and females is similar.</p>
+                <p>There are 1.44% more females living under poverty than males, a small difference that
+                    is on parr with the higher proportion of women in the overall population. </p>
+            </div>
+            <div id="chart5" class="chart-container">
+                <div style="width:50.72%;background-color: rgb(178, 223, 138);"><span>Female</span><br />50.72%</div>
+                <div style="width:49.28%;background-color: rgb(255, 127, 0);float:right;"><span>Male</span><br />49.28%</div>
+            </div>
+        </div>
+        <h2 class="section">What about the job types by gender?</h2>
+        <div id="job-chart-parent">
+            <div class="col">
+                <div class="c3-header"><span>FEMALES </span>under poverty are
+                    <div class="c3-header">Unemployed in greater proportion</div>
+                </div>
+                <div id="chart3" class="chart-container"></div>
+            </div>
+            <div id="right-col">
+                <h3>Disparity among the poor</h3>
+                <p>As expected with individuals living under poverty, most are unemployed.
+                However, the proportion of females unemployed is more significant than that
+                of males.</p>
+                <p>Among the employed, the majority of men are day laborers, private
+                    sector workers or self-employed.</p>
+                <p>In the case of employed women under poverty, most are self-employed, followed
+                    by day labor, which speaks to the precariousness of jobs that lack stability and
+                    social protection.</p>
+                
+            </div>
+        </div>
+        <h2 class="section">Fewer females in poverty have access to social security</h2>
+        <div id="ring-parent">
+            <div id="ring-desc">
+                <p>There is a marked difference in access to social
+                    security among the poor. 52,439 females have access
+                    to a social welfare compared to 85,541 males.</p>
+                <p>Not only are there more females living under poverty but 
+                    also fewer of them are protected by the State.
+                </p>
+            </div>
+            <div id="chart4" class="chart-container"></div>
+        </div>
+        
     </div>   
 </body>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="data/d3-color-legend.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script> <!-- topojson library, will use feature to map polygons-->
-<script src="chart1.js"></script>
-<!-- <script src="chart2.js"></script>
-<script src="chart3.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.min.js" integrity="sha512-KK15oKpabNDaLpWinMtNfTqy/V7pzlc2FRG174PfASes7RRx6TAsua8HJdRTKo8+BLvPBKNIkL7kXWcz5HoqqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="map-poverty.js"></script>
+<script src="map-poverty-by-pop.js"></script>
+<script src="parallel.js"></script>
+<script src="multiring.js"></script>
+<!-- <script src="stacked.js"></script> -->
 </html>
