@@ -1,0 +1,21 @@
+source,target,value
+FEMALE,Government Workers,3025
+MALE,Government Workers,6110
+FEMALE,Private Sector Workers,28784
+MALE,Private Sector Workers,57047
+FEMALE,Outsourced Workers,2208
+MALE,Outsourced Workers,4741
+FEMALE,Day Laborers,49722
+MALE,Day Laborers,144101
+FEMALE,Employers,1217
+MALE,Employers,2248
+FEMALE,Partners,510
+MALE,Partners,1055
+FEMALE,Self-employed,54481
+MALE,Self-employed,66310
+FEMALE,Unpaid Workers,29866
+MALE,Unpaid Workers,27154
+FEMALE,Domestic Workers,7640
+MALE,Domestic Workers,469
+FEMALE,Unemployed,406112
+MALE,Unemployed,257752
