@@ -45,5 +45,9 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 ### Week 6
 - [Three charts](https://magabrielaa.github.io/CAPP30239_FA22/week_06/homework/index.html) of fatal use of police force in the US (2015)
 
+### Week 8
+- [Preliminary Final Project Charts](https://magabrielaa.github.io/CAPP30239_FA22/final_project/index.html) of an overview of poverty in Ecuador
+
+
 ## Contact
 Feel free to contact me through [LinkedIn](https://www.linkedin.com/in/mariagabrielaayala/)!
