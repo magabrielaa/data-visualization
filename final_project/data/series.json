@@ -1,0 +1,181 @@
+[
+    {"level": "National",
+    "Year":2007,
+    "Value":36.7},
+
+    {"level": "National",
+    "Year":2008,
+    "Value":35.1},
+
+    {"level": "National",
+    "Year":2009,
+    "Value":36.0},
+
+    {"level": "National",
+    "Year":2010,
+    "Value":32.8},
+
+    {"level": "National",
+    "Year":2011,
+    "Value":28.6},
+
+    {"level": "National",
+    "Year":2012,
+    "Value":27.3},
+
+    {"level": "National",
+    "Year":2013,
+    "Value":25.6},
+
+    {"level": "National",
+    "Year":2014,
+    "Value":22.5},
+
+    {"level": "National",
+    "Year":2015,
+    "Value":23.3},
+
+    {"level": "National",
+    "Year":2016,
+    "Value":22.9},
+
+    {"level": "National",
+    "Year":2017,
+    "Value":21.5},
+
+    {"level": "National",
+    "Year":2018,
+    "Value":23.2},
+
+    {"level": "National",
+    "Year":2019,
+    "Value":25.0},
+
+    {"level": "National",
+    "Year":2020,
+    "Value":33.0},
+
+    {"level": "National",
+    "Year":2021,
+    "Value":27.7},
+
+    {"level": "Urban",
+    "Year":2007,
+    "Value":24.3},
+
+    {"level": "Urban",
+    "Year":2008,
+    "Value":22.6},
+
+    {"level": "Urban",
+    "Year":2009,
+    "Value":25.0},
+
+    {"level": "Urban",
+    "Year":2010,
+    "Value":22.5},
+
+    {"level": "Urban",
+    "Year":2011,
+    "Value":17.4},
+
+    {"level": "Urban",
+    "Year":2012,
+    "Value":16.1},
+
+    {"level": "Urban",
+    "Year":2013,
+    "Value":17.6},
+
+    {"level": "Urban",
+    "Year":2014,
+    "Value":16.4},
+
+    {"level": "Urban",
+    "Year":2015,
+    "Value":15.7},
+
+    {"level": "Urban",
+    "Year":2016,
+    "Value":15.7},
+
+    {"level": "Urban",
+    "Year":2017,
+    "Value":13.2},
+
+    {"level": "Urban",
+    "Year":2018,
+    "Value":15.3},
+
+    {"level": "Urban",
+    "Year":2019,
+    "Value":17.2},
+
+    {"level": "Urban",
+    "Year":2020,
+    "Value":25.4},
+
+    {"level": "Urban",
+    "Year":2021,
+    "Value":20.8},
+
+    {"level": "Rural",
+    "Year":2007,
+    "Value":61.3},
+
+    {"level": "Rural",
+    "Year":2008,
+    "Value":59.7},
+
+    {"level": "Rural",
+    "Year":2009,
+    "Value":57.5},
+
+    {"level": "Rural",
+    "Year":2010,
+    "Value":53.0},
+
+    {"level": "Rural",
+    "Year":2011,
+    "Value":50.9},
+
+    {"level": "Rural",
+    "Year":2012,
+    "Value":49.1},
+
+    {"level": "Rural",
+    "Year":2013,
+    "Value":42.0},
+
+    {"level": "Rural",
+    "Year":2014,
+    "Value":35.3},
+
+    {"level": "Rural",
+    "Year":2015,
+    "Value":39.3},
+
+    {"level": "Rural",
+    "Year":2016,
+    "Value":38.2},
+
+    {"level": "Rural",
+    "Year":2017,
+    "Value":39.3},
+
+    {"level": "Rural",
+    "Year":2018,
+    "Value":40.0},
+
+    {"level": "Rural",
+    "Year":2019,
+    "Value":41.8},
+
+    {"level": "Rural",
+    "Year":2020,
+    "Value":49.2},
+
+    {"level": "Rural",
+    "Year":2021,
+    "Value":42.4}
+]
