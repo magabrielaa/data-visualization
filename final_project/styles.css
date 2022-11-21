@@ -152,3 +152,27 @@ br{
     flex-basis:35%;
     margin-top: 3em;
 }
+
+#bar-chart-parent{
+    display:flex;
+}
+
+.horizontal-bar h2 {
+    margin-left:5em;
+    text-align: center;
+}
+
+.section{
+    text-align: left;
+}
+
+#horizontal-desc{
+    margin-top: 3em;
+    font-size: 55px;
+}
+
+.hbar-title{
+    width:400px;
+    height:50px;
+    margin-top:1.5em;
+}
