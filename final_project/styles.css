@@ -14,7 +14,7 @@ h1{
     margin:2em;
     font-weight: 700;
     font-size: 40px;
-    color:rgb(60, 59, 59);
+    color:rgb(86, 85, 85);
 }
 
 h2 {
@@ -96,6 +96,14 @@ br{
 .desc-label{
     font-weight: 300;
     font-size: 18px;
+}
+
+.desc-label text{
+    color:rgb(86, 85, 85);
+}
+
+tspan{
+    color:rgb(86, 85, 85);
 }
 
 .pie-color{
