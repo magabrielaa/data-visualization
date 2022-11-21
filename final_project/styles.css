@@ -10,7 +10,128 @@ body{
     margin:2em;
 }
 
+h1{
+    margin:2em;
+    font-weight: 700;
+    font-size: 38px;
+}
+
 h2 {
     text-align: left;
+    margin:1em;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+h3{
+    font-weight: 700;
+    text-align: left;
+    font-size: 22px;
+    margin-left: 2em;
+}
+
+.section{
+    font-weight: 600;
+    font-size: 35px;
+}
+
+p{
+    text-align: left;
     margin:2em;
+    font-size: 18px;
+}
+
+.legend{
+    margin:1em;
+    margin-left: 2em;
+    font-size: 18px;
+}
+
+#map-parent{
+    display:flex;
+}
+
+.map{
+    flex-basis: 50%;
+}
+
+.title{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.c3-header{
+    font-size: 30px;
+}
+
+.c3-header span{
+    color:rgb(178, 223, 138);
+    font-weight: 800;
+}
+
+br{
+    margin:2em;
+}
+
+#job-chart-parent{
+    display:flex;
+}
+
+#right-col{
+    margin:2em;
+    margin-top:8em;
+    text-align: center;
+}
+
+.pie-label{
+    font-weight: 500;
+}
+
+.desc-label{
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.pie-color{
+    opacity: 0.7;
+}
+
+#ring-parent{
+    display:flex;
+}
+
+#ring-desc{
+    flex-basis:35%;
+    margin-top:3em;
+}
+
+#chart4{
+    flex-basis: 65%;
+}
+
+#chart5{
+    margin:6em;
+    flex-basis:60%;
+}
+
+
+#chart5 div {
+    color:black;
+    box-sizing:border-box;
+    border:solid 1px #fff;
+    padding: 30px;
+    display: inline-block;
+    
+}
+
+#gender-prop-parent{
+    display:flex;
+}
+
+#gender-desc{
+    flex-basis:40%;
+}
+
+#chart5 span{
+    font-weight: 700;
 }
