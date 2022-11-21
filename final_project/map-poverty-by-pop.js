@@ -1,11 +1,11 @@
-// Map of poverty as a percentage of the population, by province
+// Choropleth Map of Ecuador, poverty as a percentage of the population
 
 Promise.all([ 
   d3.csv("data/provinces_clean.csv"),
   d3.json("data/provincias.json")
 ]).then(([data, ecuador]) => { 
-    console.log("my data", data)
-    console.log("topojson file", ecuador)
+    // console.log("my data", data)
+    // console.log("topojson file", ecuador)
 
     const svg = d3.select("#chart2")
     .append("svg")
@@ -19,18 +19,18 @@ Promise.all([
         //making a lookup table from the array (
         dataById[d.province] = d; //key is county id
       }
-      console.log("DATA BY ID", dataById)
+      // console.log("DATA BY ID", dataById)
     
     // const counties = topojson.feature(us, us.objects.counties);
     const provinces = topojson.feature(ecuador, ecuador.objects.provincias);
-    console.log("provinces", provinces)
+    // console.log("provinces", provinces)
 
       // Quantize evenly breakups domain into range buckets
     const color = d3.scaleQuantize() //color buckets depending on data, scaleQuantize breaks up domain into ranges for different colors
         .domain([0, 19]).nice() //color distribution, from 0 to 23 extremely poor
-        .range(d3.schemeOranges[9]);
+        .range(d3.schemeOrRd[9]);
 
-    console.log("COLOR", color.domain())
+    // console.log("COLOR", color.domain())
 
     const projection = d3
         .geoIdentity()
@@ -47,7 +47,7 @@ Promise.all([
             d3.scaleOrdinal( //scaleOrdinal or scaleQuantisize
             // color.domain(),
             ["<5", "6-7", "8-9", "10-11", "12-13", "14-15", "16-17", "18+"], //array is placed into buckets, can include strings
-            d3.schemeOranges[9] //scale given but not required, can just replace with "color", here same scheme as the rest of the page
+            d3.schemeOrRd[9] //scale given but not required, can just replace with "color", here same scheme as the rest of the page
             ),
             { title: "Poverty as % of the population" }
         ))
@@ -81,7 +81,7 @@ Promise.all([
 
 d3.csv("data/provinces_clean.csv").then(data => { 
 max_val = getMax(data, "pov_by_pop")
-console.log("THIS IS THE MAX MAP 2", max_val)
+// console.log("THIS IS THE MAX MAP 2", max_val)
 })
 
 

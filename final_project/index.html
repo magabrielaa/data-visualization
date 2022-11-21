@@ -11,6 +11,22 @@
 </head>
 <body>
     <h1>Poverty in Ecuador: An Overview</h1>
+    <h2 class="section">The pandemic reverted a 10 year decline in poverty </h2>
+    <div id="line-parent">
+        <div id="line-desc">
+            <p>Ecuador's poverty, as a percentage of the population, was on a declining trend since 2009.</p>
+            <p>The COVID-19 pandemic increased poverty back to 2009-2012 levels, peaking in 2020.</p>
+            <p>Rural areas have been the most affected, with almost half (49%) falling under poverty.</p>
+            <h3>Signs of Recovery?</h3>
+            <p>2021 shows a decline in poverty across National, Urban, and Rural levels. However, with economic
+                instability, crime, and inequality on the rise in 2022, returning to 2010's development will take time.
+            </p>
+        </div>
+        <div id="line-chart-container">
+            <div id="legend"></div>
+            <div id="chart6" class="chart-container"></div>
+        </div>
+    </div>
     <h2 class="section">Let's look at the geographical distribution of poverty</h2>
     <div id="container">
         <div id="map-parent">
@@ -48,7 +64,7 @@
                 <div style="width:49.28%;background-color: rgb(255, 127, 0);float:right;"><span>Male</span><br />49.28%</div>
             </div>
         </div>
-        <h2 class="section">What about the job types by gender?</h2>
+        <h2 class="section">What about types of employment by gender?</h2>
         <div id="job-chart-parent">
             <div class="col">
                 <div class="c3-header"><span>FEMALES </span>under poverty are
@@ -81,15 +97,18 @@
             </div>
             <div id="chart4" class="chart-container"></div>
         </div>
-        
+        <div id="chart7" class="chart-container"></div> 
     </div>   
 </body>
-<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://d3js.org/d3-collection.v1.min.js"></script>
 <script src="data/d3-color-legend.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script> <!-- topojson library, will use feature to map polygons-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.min.js" integrity="sha512-KK15oKpabNDaLpWinMtNfTqy/V7pzlc2FRG174PfASes7RRx6TAsua8HJdRTKo8+BLvPBKNIkL7kXWcz5HoqqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="map-poverty.js"></script>
 <script src="map-poverty-by-pop.js"></script>
 <script src="parallel.js"></script>
 <script src="multiring.js"></script>
+<script src="area-chart.js" type="module"></script>
+
 </html>

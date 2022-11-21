@@ -135,3 +135,20 @@ br{
 #chart5 span{
     font-weight: 700;
 }
+
+#legend {
+    margin-left:15em;
+}
+
+#legend div{
+    font-size: 14px;
+}
+
+#line-parent{
+    display:flex;
+}
+
+#line-desc{
+    flex-basis:35%;
+    margin-top: 3em;
+}

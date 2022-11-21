@@ -1,3 +1,5 @@
+// Choropleth Map of Ecuador, by Poverty per 10.000 habitants
+
 const tooltip = d3.select("body")
   .append("div")
   .attr("class", "svg-tooltip")
@@ -12,8 +14,8 @@ Promise.all([
   d3.csv("data/provinces_clean.csv"),
   d3.json("data/provincias.json")
 ]).then(([data, ecuador]) => { 
-    console.log("my data", data)
-    console.log("topojson file", ecuador)
+    // console.log("my data", data)
+    // console.log("topojson file", ecuador)
 
     const svg = d3.select("#chart1")
       .append("svg")
@@ -28,18 +30,18 @@ Promise.all([
         //making a lookup table from the array (
         dataById[d.province] = d; //key is county id
       }
-      console.log("DATA BY ID", dataById)
+      // console.log("DATA BY ID", dataById)
     
     // const counties = topojson.feature(us, us.objects.counties);
     const provinces = topojson.feature(ecuador, ecuador.objects.provincias);
-    console.log("provinces", provinces)
+    // console.log("provinces", provinces)
 
       // Quantize evenly breakups domain into range buckets
     const color = d3.scaleQuantize() //color buckets depending on data, scaleQuantize breaks up domain into ranges for different colors
         .domain([0, 15]).nice() //color distribution, from 0 to 23 extremely poor
         .range(d3.schemePurples[9]);
 
-    console.log("COLOR", color.domain())
+    // console.log("COLOR", color.domain())
 
     const projection = d3
         .geoIdentity()

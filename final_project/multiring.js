@@ -1,5 +1,6 @@
+// Multiring comparison of access to social security, by gender
+
 d3.json("data/ssn.json").then((data) => {
-  console.log("JSON DATA HERE HERE", data)
     for (let d of data) {
       createRing(d);
     }

@@ -1,4 +1,4 @@
-// Parallel Set of Access to Social Security, by Gender
+// Parallel Set of Types of Employment, by Gender
 
 const margin = { top: 25, right: 0, bottom: 20, left: 0 },
   nodeWidth = 5,
@@ -18,11 +18,11 @@ d3.csv("data/jobs_by_gender.csv").then((data) => {
   }
 
   let genders = [...new Set(data.map(d => d.source))]; //spread syntax
-  console.log("genders", genders); // males and females on left-hand side
+  // console.log("genders", genders); // males and females on left-hand side
 
   let graph = nodeLinkData(data, ["source", "target"]); // helper function nodeLinkData below
 
-  console.log(graph, data);
+  // console.log(graph, data);
 
   let sankey = d3.sankey() //sets up function used later to modify data
     .nodeWidth(nodeWidth)
@@ -89,7 +89,7 @@ d3.csv("data/jobs_by_gender.csv").then((data) => {
     .attr("x", width - margin.left)
     .attr("y", 16)
     .attr("text-anchor", "end")
-    .text("Job Type");
+    .text("Employment Type");
 
   svg.append("g")
     .selectAll("text")
