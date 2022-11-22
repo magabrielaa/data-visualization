@@ -8,6 +8,7 @@ d3.json("data/ssn.json").then((data) => {
   
   function createRing({ gender, values }) {
     const height = 450,
+      color = (gender === "MALE") ? d3.schemePaired[7] : d3.schemePaired[2],
       width = 450,
       innerRadius = 80,
       outerRadius = 150,
@@ -26,8 +27,8 @@ d3.json("data/ssn.json").then((data) => {
       .attr("viewBox", [-width / 2, -height / 2, width, height])
       .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
     
-    var color = d3.scaleOrdinal()
-      .range([d3.schemePaired[1], d3.schemePaired[3]]);
+    // var color = d3.scaleOrdinal()
+    //   .range([d3.schemePaired[1], d3.schemePaired[3]]);
   
     svg.append("g")
       .attr("stroke", "white")
@@ -38,7 +39,14 @@ d3.json("data/ssn.json").then((data) => {
       .attr("opacity", 0.5)
       .join("path")
       .attr("class", "pie-color")
-      .style("fill", function(d) {return color(d.data); })
+      .style("fill", function(d) {
+        console.log(d.data.category)
+        if (d.data.category == "No Access"){
+          return "#ccc"
+        } else {
+          return color
+        }
+      })
       .attr("d", arc);
   
     svg.append("g")
