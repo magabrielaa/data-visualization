@@ -11,9 +11,10 @@
 </head>
 <body>
     <h1>Rising Poverty in Ecuador: <br>Females and Indigenous Peoples at Risk</h1>
-    <h2 class="section">The pandemic reverted a 10 year decline in poverty </h2>
+    <h2 class="section">The pandemic reverted a 10 year decline in poverty</h2>
     <div id="line-parent">
         <div id="line-desc">
+            <h3>Rural Areas Hit Hardest</h3>
             <p>Ecuador's poverty, as a percentage of the population, was on a declining trend since 2009.</p>
             <p>The COVID-19 pandemic increased poverty back to 2009-2012 levels, peaking in 2020.</p>
             <p>Rural areas have been the most affected, with almost half (49%) falling under poverty.</p>
@@ -31,16 +32,16 @@
     <div id="container">
         <div id="map-parent">
             <div class = "map">
-                <h2> Poverty appears to be concentrated in the coastal region</h2>
+                <h2> Poverty is concentrated in the coastal region</h2>
                 <div id="legend1" class="legend"></div>
                 <div id="chart1" class="chart-container"></div>
-                <p> This first chart shows poverty normalized per 10.000 habitants and it shows
-                    that poverty is concentrated in three provinces in the Coastal Region:
+                <p> The first map shows poverty normalized per 10.000 habitants. The key lesson?
+                    Poverty is concentrated in three provinces in the Coastal Region:
                     Esmeraldas, Guayas, and Manabí.
                 </p>
             </div>
             <div class="map">
-                <h2> But it is evenly spread as a proportion of population size</h2>
+                <!-- <h2> But it is evenly spread as a proportion of population size</h2>
                 <div id="legend2" class="legend"></div>
                 <div id="chart2" class="chart-container"></div>
                 <p> A look at the distribution of poverty by population shows us that that poverty
@@ -48,10 +49,19 @@
                     the Amazon. This more concerning picture suggests social policy should be focused in 
                     Esmeraldas and Bolivar.
                     
+                </p> -->
+                <h2> Where most rural households are located</h2>
+                <div id="legend5" class="legend"></div>
+                <div id="chart10"></div>
+                <p>The provinces with the majority of rural households are similar to those with
+                    the highest concentration of poverty. These are the areas that have been most affected
+                    by the pandemic.
                 </p>
             </div>
         </div>
         <br>
+        <!-- <div id="legend4"></div>
+        <div id="chart9"></div> -->
         <h2 class="section">How is poverty distributed by gender?</h2>
         <div id="gender-prop-parent">
             <div id="gender-desc">
@@ -60,7 +70,7 @@
                     is on parr with the higher proportion of women in the overall population. </p>
             </div>
             <div id="chart5" class="chart-container">
-                <div style="width:50.72%;background-color: rgb(178, 223, 138);"><span>FEMALE</span><br />50.72%</div>
+                <div style="width:50.72%;background-color: rgb(202, 178, 214);"><span>FEMALE</span><br />50.72%</div>
                 <div style="width:49.28%;background-color: rgb(255, 127, 0);float:right;"><span>MALE</span><br />49.28%</div>
             </div>
         </div>
@@ -134,9 +144,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script> <!-- topojson library, will use feature to map polygons-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.min.js" integrity="sha512-KK15oKpabNDaLpWinMtNfTqy/V7pzlc2FRG174PfASes7RRx6TAsua8HJdRTKo8+BLvPBKNIkL7kXWcz5HoqqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="map-poverty.js"></script>
-<script src="map-poverty-by-pop.js"></script>
+<!-- <script src="map-poverty-by-pop.js"></script> -->
 <script src="parallel.js"></script>
 <script src="multiring.js"></script>
 <script src="area-chart.js" type="module"></script>
 <script src="horizontal-bar.js" type="module"></script>
+<!-- <script src="map-indigenous-pov.js"></script> -->
+<script src="map-rural.js"></script>
 </html>

@@ -39,7 +39,7 @@ Promise.all([
       // Quantize evenly breakups domain into range buckets
     const color = d3.scaleQuantize() //color buckets depending on data, scaleQuantize breaks up domain into ranges for different colors
         .domain([0, 15]).nice() //color distribution, from 0 to 23 extremely poor
-        .range(d3.schemePurples[9]);
+        .range(d3.schemeBlues[9]);
 
     // console.log("COLOR", color.domain())
 
@@ -58,7 +58,7 @@ Promise.all([
             d3.scaleOrdinal( //scaleOrdinal or scaleQuantisize
             // color.domain(),
             ["<5", "6", "7", "8", "9", "10", "11", "12", "13+"], //array is placed into buckets, can include strings
-            d3.schemePurples[9] //scale given but not required, can just replace with "color", here same scheme as the rest of the page
+            d3.schemeBlues[9] //scale given but not required, can just replace with "color", here same scheme as the rest of the page
             ),
             { title: "Poverty per 10.000 habitants" }
         ));

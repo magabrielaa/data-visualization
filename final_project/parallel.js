@@ -33,7 +33,7 @@ d3.csv("data/jobs_by_gender.csv").then((data) => {
     ]);
 
   let color = d3.scaleOrdinal()
-    .range([d3.schemePaired[2], d3.schemePaired[7]])
+    .range([d3.schemePaired[8], d3.schemePaired[7]])
     .domain(genders);
 
   const { nodes, links } = sankey(graph); // modifies and returns graph. Object destructuring syntax
