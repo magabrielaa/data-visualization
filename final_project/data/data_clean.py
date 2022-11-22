@@ -3,7 +3,11 @@ import pandas as pd
 
 provinces = pd.read_csv("province.csv")
 gender = pd.read_csv("gender.csv")
-print(provinces)
+ethnicity = pd.read_csv("ethnicity.csv")
+ind_ext_poor = pd.read_csv("indigenous_ext_poor.csv", usecols = ["province", "ind_ext_poor"])
+ind_poor = pd.read_csv("indigenous_poor.csv", usecols = ["province", "ind_poor"])
+df_merged = ind_poor.merge(ind_ext_poor)
+urban_rural = pd.read_csv("urban-rural.csv")
 
 female_pop = 8844706
 male_pop = 8665937
@@ -15,8 +19,6 @@ total_pov = 1150552
 
 male_perc = male_pov/total_pov
 female_perc = female_pov/total_pov
-
-
 
 provinces['poor_total'] = provinces['extremely_poor'] + provinces['moderately_poor']
 
@@ -37,5 +39,16 @@ provinces['pov_by_pop'] = ((provinces['poor_total'] / provinces['population']) *
 
 gender["gender_proportion"] = (gender["counts"] / gender["pop"]) * 100
 
-provinces.to_csv("provinces_clean", encoding='utf-8', index=False)
+ethnicity["poor_total"] = ethnicity["extremely_poor"] + ethnicity["moderately_poor"] 
+
+provinces_merged = provinces.merge(df_merged)
+provinces_merged = provinces_merged.merge(urban_rural, how='left', on='province')
+provinces_merged["ind_epoor_per"] = (provinces_merged["ind_ext_poor"] / 1000).round(decimals = 2)
+provinces_merged["ind_poor_per"] = (provinces_merged["ind_poor"] / 1000).round(decimals = 2)
+provinces_merged["urban_per"] = (provinces_merged["urban"]/10000).round(decimals = 2)
+provinces_merged["rural_per"] = (provinces_merged["rural"]/10000).round(decimals = 2)
+
+provinces_merged.to_csv("provinces_clean.csv", encoding='utf-8', index=False)
+ethnicity.to_csv("ethnicity", encoding='utf-8', index=False)
+
 
