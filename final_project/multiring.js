@@ -8,7 +8,7 @@ d3.json("data/ssn.json").then((data) => {
   
   function createRing({ gender, values }) {
     const height = 450,
-      color = (gender === "MALE") ? d3.schemePaired[7] : d3.schemePaired[2],
+      color = (gender === "MALE") ? d3.schemePaired[7] : d3.schemePaired[8],
       width = 450,
       innerRadius = 80,
       outerRadius = 150,
