@@ -57,7 +57,7 @@ d3.csv("data/jobs_by_gender.csv").then((data) => {
     .attr("d", d3.sankeyLinkHorizontal()) //  d3.sankeyLinkHorizontal comes from sankey library
     .attr("stroke", d => color(d.source.name))
     .attr("stroke-width", d => d.width)
-    .attr("opacity", 0.75) // default opacity <1
+    .attr("opacity", 0.75)
     .style("mix-blend-mode", "multiply")
     .on("mouseover", function() {
       d3.select(this)
