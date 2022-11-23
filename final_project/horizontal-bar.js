@@ -86,7 +86,8 @@ function BarChart(data, {
     // Construct scales and axes.
     const xScale = xType(xDomain, xRange);
     const yScale = d3.scaleBand(yDomain, yRange).padding(yPadding);
-    const xAxis = d3.axisTop(xScale).ticks(width / 80, xFormat);
+    const xAxis = d3.axisBottom
+    (xScale).ticks(width / 80, xFormat);
     const yAxis = d3.axisLeft(yScale).tickSizeOuter(0);
   
     // Compute titles.
@@ -115,7 +116,7 @@ function BarChart(data, {
         //     .attr("stroke-opacity", 0))
         .call(g => g.append("text")
             .attr("x", width - marginRight)
-            .attr("y", 14)
+            .attr("y", 27)
             .attr("fill", "currentColor")
             .attr("text-anchor", "end")
             .text(xLabel));
@@ -145,7 +146,7 @@ function BarChart(data, {
         .attr("dy", "0.35em")
         .attr("dx", -4)
         .text(title)
-        .call(text => text.filter(i => xScale(X[i]) - xScale(0) < 20) // short bars
+        .call(text => text.filter(i => xScale(X[i]) - xScale(0) < 40) // short bars
             .attr("dx", +4)
             .attr("fill", titleAltColor)
             .attr("text-anchor", "start"));
