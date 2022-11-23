@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Rising Poverty in Ecuador: <br>Rural Females and Indigenous Peoples at Risk</h1>
+    <h1>Rising Poverty in Ecuador: <br>Females and Indigenous Peoples at Risk</h1>
     <h2 class="section">The pandemic reverted a 10 year decline in poverty</h2>
     <div id="line-parent">
         <div id="line-desc">
@@ -109,34 +109,37 @@
         </div>
         <h2 class="section">Indigenous peoples are gravely affected by extreme poverty</h2>
         <div id="bar-chart-parent">
-            <div class="horizontal-bar">
-                <p>If we look at total poverty (including moderate and extreme poverty), the gap
+            <div id="treemap">
+                <!-- <p>If we look at total poverty (including moderate and extreme poverty), the gap
                     between mestizos and indigenous peoples is marked. 
-                </p>
-                <h2 class="hbar-title">Moderate and extreme poverty</h2>
-                <div id="chart7" class="chart-container">
+                </p> -->
+                <!-- <h2 class="hbar-title">Moderate and extreme poverty</h2> -->
+                <!-- <div id="chart7" class="chart-container"> -->
+                <h2 class="hbar-title">Indigenous peoples account for only 7% of the population</h2>
+                <div id="chart11" class="chart-container"></div>
                 </div>
-            </div>
-            <div class="horizontal-bar">
-                <p>This gap shrinks when we focus on extreme poverty, with 56,192 indigenous peoples living 
+            <div id="horizontal-bar">
+                <!-- <p>This gap shrinks when we focus on extreme poverty, with 56,192 indigenous peoples living 
                     under extreme poverty compared to 82,580 mestizos.</p>
-              
-                <h2 class="hbar-title"> Extreme poverty</h2>
+               -->
+                <h2 class="hbar-title">But they account for a large share of extreme poverty</h2>
                 <div id="chart8" class="chart-container"></div>
             </div>
             <div id="horizontal-desc">
                 <h3>Why is this concerning?</h3>
-                <p>72% of the population self-identifies as mestizo compared to only 7% self-identifies
-                    as indigenous.  </p>
-                <p>This means that indigenous peoples are a minority drastically affected by extreme
+                <p>72% of the population self-identifies as mestizo compared to 7% as indigenous.  </p>
+                
+                <p>This means that indigenous peoples are the group most affected by extreme
                     poverty. </p>
 
-                <p>Indigenous populations are concentrated in rural areas, which have also been particularly 
-                    affected by the pandemic.
-                </p>
+                <!-- <p>Indigenous populations are concentrated in rural areas, which were hit hardest by 
+                    the pandemic.
+                </p> -->
             </div>
         </div>
+        </div>
     </div>   
+    <!-- <div id="chart11" class="chart-container"></div> -->
 </body>
 <script src="https://d3js.org/d3-collection.v1.min.js"></script>
 <script src="data/d3-color-legend.js"></script>
@@ -151,4 +154,5 @@
 <script src="horizontal-bar.js" type="module"></script>
 <!-- <script src="map-indigenous-pov.js"></script> -->
 <script src="map-rural.js"></script>
+<script src="treemap.js"></script>
 </html>

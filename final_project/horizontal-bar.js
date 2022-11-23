@@ -5,7 +5,7 @@ d3.csv("data/ethnicity.csv").then(data => {
     for (let d of data) {
         d.poor_total = +d.poor_total; //force a number
     };
-    console.log(data)
+    // console.log(data.ethnicity)
 
     data = data.sort((a,b) => d3.descending(a.poor_total, b.poor_total)); // sort by total poverty
 
@@ -16,7 +16,7 @@ d3.csv("data/ethnicity.csv").then(data => {
         height: 600,
         xLabel: "Counts →",
         // color: d => (d.ethnicity == "Indigenous") ? "red" : "#ccc",
-        color: "#ccc"
+        color: "#ccc",
       })
 
       document.getElementById("chart7").appendChild(chart) //append to DOM
@@ -36,7 +36,7 @@ d3.csv("data/ethnicity.csv").then(data => {
         width:650,
         height: 600,
         xLabel: "Counts →",
-        color: "#ccc"
+        color: "#ccc",
       })
 
       document.getElementById("chart8").appendChild(chart) //append to DOM
@@ -64,6 +64,7 @@ function BarChart(data, {
     yDomain, // an array of (ordinal) y-values
     yRange, // [top, bottom]
     color = "currentColor", // bar fill color
+    // color = d => (d.ethnicity == "Indigenous") ? "red" : "#ccc",
     titleColor = "black", // title fill color when atop bar
     titleAltColor = "currentColor", // title fill color when atop background
   } = {}) {
@@ -120,10 +121,20 @@ function BarChart(data, {
             .attr("fill", "currentColor")
             .attr("text-anchor", "end")
             .text(xLabel));
-  
+
+    console.log("my data", data)
+
     svg.append("g")
         .attr("fill", color)
-        // .attr("fill", d =>(d.ethnicity == "Indigenous") ? "red" : "#ccc")
+        // .attr("fill", data =>(data.ethnicity == "Indigenous") ? "red" : "#ccc")
+        // .style("fill", function(d) {
+        //   // console.log(d.data.category)
+        //   if (d.data.category == "No Access"){
+        //     return "#ccc"
+        //   } else {
+        //     return color
+        //   }
+        // })
       .selectAll("rect")
       .data(I)
       .join("rect")

@@ -181,17 +181,33 @@ tspan{
 }
 
 #horizontal-desc{
-    margin-top: 3em;
+    margin-top: 1em;
     font-size: 55px;
-    flex-basis:30%;
+    flex-basis:20%;
 }
 
-.horizontal-bar{
-    flex-basis:35%;
+#horizontal-bar{
+    flex-basis:40%;
+}
+
+#treemap{
+    flex-basis: 40%;
 }
 
 .hbar-title{
     width:400px;
     height:50px;
     margin-top:1.5em;
+}
+
+#chart8{
+    margin-left:1em;
+}
+
+#chart11{
+    margin-left:1em;
+}
+
+#horizontal-desc p{
+    margin:3em;
 }
