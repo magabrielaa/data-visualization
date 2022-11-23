@@ -1,10 +1,10 @@
-// Choropleth Map of Ecuador, poverty as a percentage of the population
+// Choropleth Map of Ecuador, rural households
 
 Promise.all([ 
     d3.csv("data/provinces_clean.csv"),
     d3.json("data/provincias.json")
   ]).then(([data, ecuador]) => { 
-      console.log("my data", data)
+    //   console.log("my data", data)
       // console.log("topojson file", ecuador)
   
       const svg = d3.select("#chart10")
@@ -79,7 +79,7 @@ Promise.all([
   
   d3.csv("data/provinces_clean.csv").then(data => { 
   max_val = getMax(data, "rural_per")
-  console.log("THIS IS THE MAX MAP", max_val)
+//   console.log("THIS IS THE MAX MAP", max_val)
   })
   
   
