@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Rising Poverty in Ecuador: <br>Females and Indigenous Peoples at Risk</h1>
+    <h1>Rising Poverty in Ecuador: <br>Indigenous Peoples and Females at Risk</h1>
     <h2 class="section">The pandemic reverted a 10 year decline in poverty</h2>
     <div id="line-parent">
         <div id="line-desc">
@@ -62,6 +62,36 @@
         <br>
         <!-- <div id="legend4"></div>
         <div id="chart9"></div> -->
+        <h2 class="section">Indigenous peoples are gravely affected by extreme poverty</h2>
+        <div id="bar-chart-parent">
+            <div id="treemap">
+                <!-- <p>If we look at total poverty (including moderate and extreme poverty), the gap
+                    between mestizos and indigenous peoples is marked. 
+                </p> -->
+                <!-- <h2 class="hbar-title">Moderate and extreme poverty</h2> -->
+                <!-- <div id="chart7" class="chart-container"> -->
+                <h2 class="hbar-title">Indigenous peoples account for only 7% of the population</h2>
+                <div id="chart11" class="chart-container"></div>
+                </div>
+            <div id="horizontal-bar">
+                <!-- <p>This gap shrinks when we focus on extreme poverty, with 56,192 indigenous peoples living 
+                    under extreme poverty compared to 82,580 mestizos.</p>
+               -->
+                <h2 class="hbar-title">But they account for a large share of extreme poverty</h2>
+                <div id="chart8" class="chart-container"></div>
+            </div>
+            <div id="horizontal-desc">
+                <h3>Why is this concerning?</h3>
+                <p>72% of the population self-identifies as mestizo compared to 7% as indigenous.  </p>
+                
+                <p>This means that indigenous peoples are the group most affected by extreme
+                    poverty. </p>
+
+                <!-- <p>Indigenous populations are concentrated in rural areas, which were hit hardest by 
+                    the pandemic.
+                </p> -->
+            </div>
+        </div>
         <h2 class="section">How is poverty distributed by gender?</h2>
         <div id="gender-prop-parent">
             <div id="gender-desc">
@@ -107,52 +137,20 @@
             </div>
             <div id="chart4" class="chart-container"></div>
         </div>
-        <h2 class="section">Indigenous peoples are gravely affected by extreme poverty</h2>
-        <div id="bar-chart-parent">
-            <div id="treemap">
-                <!-- <p>If we look at total poverty (including moderate and extreme poverty), the gap
-                    between mestizos and indigenous peoples is marked. 
-                </p> -->
-                <!-- <h2 class="hbar-title">Moderate and extreme poverty</h2> -->
-                <!-- <div id="chart7" class="chart-container"> -->
-                <h2 class="hbar-title">Indigenous peoples account for only 7% of the population</h2>
-                <div id="chart11" class="chart-container"></div>
-                </div>
-            <div id="horizontal-bar">
-                <!-- <p>This gap shrinks when we focus on extreme poverty, with 56,192 indigenous peoples living 
-                    under extreme poverty compared to 82,580 mestizos.</p>
-               -->
-                <h2 class="hbar-title">But they account for a large share of extreme poverty</h2>
-                <div id="chart8" class="chart-container"></div>
-            </div>
-            <div id="horizontal-desc">
-                <h3>Why is this concerning?</h3>
-                <p>72% of the population self-identifies as mestizo compared to 7% as indigenous.  </p>
-                
-                <p>This means that indigenous peoples are the group most affected by extreme
-                    poverty. </p>
-
-                <!-- <p>Indigenous populations are concentrated in rural areas, which were hit hardest by 
-                    the pandemic.
-                </p> -->
-            </div>
-        </div>
+        
         </div>
     </div>   
-    <!-- <div id="chart11" class="chart-container"></div> -->
 </body>
-<script src="https://d3js.org/d3-collection.v1.min.js"></script>
+<!-- <script src="https://d3js.org/d3-collection.v1.min.js"></script> -->
 <script src="data/d3-color-legend.js"></script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script> <!-- topojson library, will use feature to map polygons-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.min.js" integrity="sha512-KK15oKpabNDaLpWinMtNfTqy/V7pzlc2FRG174PfASes7RRx6TAsua8HJdRTKo8+BLvPBKNIkL7kXWcz5HoqqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="map-poverty.js"></script>
-<!-- <script src="map-poverty-by-pop.js"></script> -->
 <script src="parallel.js"></script>
 <script src="multiring.js"></script>
 <script src="area-chart.js" type="module"></script>
 <script src="horizontal-bar.js" type="module"></script>
-<!-- <script src="map-indigenous-pov.js"></script> -->
 <script src="map-rural.js"></script>
 <script src="treemap.js"></script>
 </html>
