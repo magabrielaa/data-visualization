@@ -107,12 +107,8 @@ function BarChart(data, {
   
     svg.append("g")
         .attr("transform", `translate(0,${height - marginBottom + 12})`)
-        // .attr("transform", `translate(0,${height - margin.bottom})`) // move location of axis
         .call(xAxis)
         .call(g => g.select(".domain").remove())
-        // .call(g => g.selectAll(".tick line").clone()
-        //     .attr("y2", height - marginTop - marginBottom)
-        //     .attr("stroke-opacity", 0))
         .call(g => g.append("text")
             .attr("x", width - marginRight)
             .attr("y", 27)
@@ -126,7 +122,7 @@ function BarChart(data, {
       .selectAll("rect")
       .data(I)
       .join("rect")
-        .attr("fill", d => (data[d].ethnicity === "Indigenous") ? "red" : color)
+        .attr("fill", d => (data[d].ethnicity === "Indigenous") ? d3.schemePaired[2] : color)
         .attr("x", xScale(0))
         .attr("y", i => yScale(Y[i]))
         .attr("width", i => xScale(X[i]) - xScale(0))

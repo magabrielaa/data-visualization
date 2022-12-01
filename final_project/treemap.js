@@ -36,7 +36,7 @@ d3.csv("data/ethnicity_counts2.csv").then(data => {
         .style("stroke", "black")
         .style("fill", function(d) {
             if (d.id == "Indigenous"){
-              return d3.schemePaired[5]
+              return d3.schemePaired[2]
             } else {
               return "#ccc"
             }
