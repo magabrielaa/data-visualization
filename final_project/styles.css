@@ -14,7 +14,7 @@ body{
 
 
 h1{
-    margin-bottom: 2em;
+    margin: 2em;
     font-weight: 700;
     font-size: 40px;
     color:rgb(86, 85, 85);
@@ -195,7 +195,7 @@ tspan{
 
 #line-desc{
     flex-basis:35%;
-    margin-top: 3em;
+    margin-top: 1em;
 }
 
 #bar-chart-parent{
@@ -356,7 +356,8 @@ h4{
     margin-top:1em;
     padding:3em;
     font-size:20px;
-    font-weight: 600;
+    font-weight: 500;
+    color:white;
 }
 
 .source{
@@ -366,4 +367,13 @@ h4{
 .source-map{
     font-size:16px;
     height:50px;
+}
+
+#course-desc{
+    background-color: #888888;
+    /* width:92%; */
+    text-align: center;
+    margin-left:2em;
+    margin-right:2em;
+    box-shadow: 3px 2px #6e6d6d;
 }
