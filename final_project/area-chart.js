@@ -7,6 +7,8 @@ d3.json("data/series.json").then(data => {
         for (let d of data) {
             d.Year = timeParse(d.Year)
         }
+
+        console.log(data)
     
         let chart = StackedAreaChart(data, {
             x: d => d.Year,
@@ -121,6 +123,16 @@ function StackedAreaChart(data, {
     svg.append("g")
         .attr("transform", `translate(0,${height - marginBottom})`)
         .call(xAxis);
+
+    // add vertical line to mark peak in 2020
+    svg.append("line")
+        .attr("x1",718)  
+        .attr("y1", 27) //positioning of the line from the top
+        .attr("x2", 718)  
+        .attr("y2", height - margin.top - margin.bottom + 14) //length of the line
+        .style("stroke-width", 2)
+        .style("stroke", "rgb(86, 85, 85)")
+        .style("fill", "none");
 
     //Build discrete color legend using Swatches function
     let swatchHTML = Swatches(d3.scaleOrdinal(Z, d3.schemePaired)); //passes scale ordinal with the data: Z (which already contains the categories)

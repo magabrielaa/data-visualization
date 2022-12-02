@@ -40,8 +40,13 @@ h3{
     font-weight: 700;
     text-align: left;
     font-size: 22px;
-    margin-left: 2em;
+    margin-left: 1.5em;
     color:rgb(86, 85, 85);
+    background-color: rgb(238, 237, 237);
+    box-shadow: 2px 5px #888888;
+    width:60%;
+    padding:0.3em;
+    text-align: center;
 }
 
 
@@ -83,7 +88,8 @@ p{
 
 .c3-header span{
     color: rgb(202, 178, 214);
-    -webkit-text-stroke: 0.4px rgb(86, 85, 85);
+    -webkit-text-stroke: 0.5px white;
+    font-size: 34px;
     font-weight: 800;
 }
 
@@ -93,6 +99,10 @@ br{
 
 #job-chart-parent{
     display:flex;
+}
+
+#job-chart-parent h3{
+    width:70%;
 }
 
 #right-col{
@@ -200,16 +210,24 @@ tspan{
 #horizontal-desc{
     margin-top: 1em;
     font-size: 55px;
-    flex-basis:20%;
+    flex-basis:24%;
+}
+
+
+#horizontal-desc h3{
+    margin-left: 2em;
 }
 
 #horizontal-bar{
-    flex-basis:40%;
+    flex-basis:38%;
+    margin-left:0.5em;
 }
 
+
 #treemap{
-    flex-basis: 40%;
+    flex-basis: 38%;
 }
+
 
 .hbar-title{
     width:400px;
