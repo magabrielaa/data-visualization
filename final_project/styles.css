@@ -7,16 +7,25 @@ body{
     font-family: 'Lato', sans-serif;
     margin:auto;
     text-align: center;
-    margin:2em;
     background-color: rgb(220, 215, 215);
+    width:1300px;
 }
 
 
 h1{
-    margin:2em;
+    margin-bottom: 2em;
     font-weight: 700;
     font-size: 40px;
     color:rgb(86, 85, 85);
+    background-color: rgb(238, 237, 237);
+    padding:0.3em;
+    box-shadow: 5px 10px #888888;
+    width:92%;
+    margin:auto;
+}
+
+#subheader{
+    font-weight: 500;
 }
 
 h2 {
@@ -118,17 +127,17 @@ tspan{
 }
 
 #ring-desc{
-    flex-basis:35%;
+    flex-basis:30%;
     margin-top:3em;
 }
 
 #chart4{
-    flex-basis: 65%;
+    flex-basis: 70%;
 }
 
 #chart5{
-    margin:6em;
-    flex-basis:60%;
+    margin-left:3em;
+    flex-basis:30%;
 }
 
 
@@ -147,6 +156,11 @@ tspan{
 
 #gender-desc{
     flex-basis:40%;
+}
+
+#chart5{
+    margin-top:2em;
+    flex-basis:50%;
 }
 
 #chart5 span{
