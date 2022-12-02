@@ -211,3 +211,24 @@ tspan{
 #horizontal-desc p{
     margin:3em;
 }
+
+.map-tooltip{
+    background: rgba(255, 255, 255, .9); /* 0.9 gives slight transparency */
+    border-radius: 8px;
+    color: #000;
+    display: block;
+    font-size: 14px;
+    font-family: 'Work Sans',Arial, Helvetica, sans-serif;
+    line-height: 16px;
+    text-transform: none;
+    max-width: 320px;
+    padding: 1rem;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: pre;
+    z-index: 300;
+    visibility: hidden;
+    box-shadow: 8px 4px 16px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 4px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 16px 0px rgba(0,0,0,0.75);
+  }
