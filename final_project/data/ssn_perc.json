@@ -1,0 +1,29 @@
+[
+    {
+      "gender": "FEMALE",
+      "values": [
+        {
+          "category": "No Access",
+          "amount": 91
+        },
+        {
+          "category": "Access",
+          "amount": 9
+        }
+      ]
+    },
+
+    {
+        "gender": "MALE",
+        "values": [
+          {
+            "category": "No Access",
+            "amount": 85
+          },
+          {
+            "category": "Access",
+            "amount": 15
+          }
+        ]
+      }
+]
