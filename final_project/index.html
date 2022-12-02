@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Charts</title>
+    <title>Poverty in Ecuador</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -23,7 +23,7 @@
                 instability, crime, and inequality on the rise in 2022, returning to 2010's development will take time.
             </p>
         </div>
-        <div id="line-chart-container">
+        <div id="area-chart-container">
             <div id="legend"></div>
             <div id="chart6" class="chart-container"></div>
         </div>
@@ -41,15 +41,6 @@
                 </p>
             </div>
             <div class="map">
-                <!-- <h2> But it is evenly spread as a proportion of population size</h2>
-                <div id="legend2" class="legend"></div>
-                <div id="chart2" class="chart-container"></div>
-                <p> A look at the distribution of poverty by population shows us that that poverty
-                    is widespread through Ecuador, not just in the Coast but also in the Highlands and
-                    the Amazon. This more concerning picture suggests social policy should be focused in 
-                    Esmeraldas and Bolivar.
-                    
-                </p> -->
                 <h2> Where most rural households are located</h2>
                 <div id="legend5" class="legend"></div>
                 <div id="chart10"></div>
@@ -60,36 +51,21 @@
             </div>
         </div>
         <br>
-        <!-- <div id="legend4"></div>
-        <div id="chart9"></div> -->
         <h2 class="section">Indigenous peoples are gravely affected by extreme poverty</h2>
         <div id="bar-chart-parent">
             <div id="treemap">
-                <!-- <p>If we look at total poverty (including moderate and extreme poverty), the gap
-                    between mestizos and indigenous peoples is marked. 
-                </p> -->
-                <!-- <h2 class="hbar-title">Moderate and extreme poverty</h2> -->
-                <!-- <div id="chart7" class="chart-container"> -->
                 <h2 class="hbar-title">Indigenous peoples account for only 7% of the population</h2>
                 <div id="chart11" class="chart-container"></div>
                 </div>
             <div id="horizontal-bar">
-                <!-- <p>This gap shrinks when we focus on extreme poverty, with 56,192 indigenous peoples living 
-                    under extreme poverty compared to 82,580 mestizos.</p>
-               -->
                 <h2 class="hbar-title">But they account for a large share of extreme poverty</h2>
                 <div id="chart8" class="chart-container"></div>
             </div>
             <div id="horizontal-desc">
                 <h3>Why is this concerning?</h3>
                 <p>72% of the population self-identifies as mestizo compared to 7% as indigenous.  </p>
-                
                 <p>This means that indigenous peoples are the group most affected by extreme
                     poverty. </p>
-
-                <!-- <p>Indigenous populations are concentrated in rural areas, which were hit hardest by 
-                    the pandemic.
-                </p> -->
             </div>
         </div>
         <h2 class="section">How is poverty distributed by gender?</h2>
@@ -122,10 +98,9 @@
                 <p>In the case of employed women under poverty, most are self-employed, followed
                     by day labor, which speaks to the precariousness of jobs that lack stability and
                     social protection.</p>
-                
             </div>
         </div>
-        <h2 class="section">Fewer females in poverty have access to social security</h2>
+        <h2 class="section">More females in poverty lack access to social security</h2>
         <div id="ring-parent">
             <div id="ring-desc">
                 <p>There is a marked difference in access to social
@@ -137,7 +112,6 @@
             </div>
             <div id="chart4" class="chart-container"></div>
         </div>
-        
         </div>
     </div>   
 </body>
@@ -146,10 +120,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script> <!-- topojson library, will use feature to map polygons-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.min.js" integrity="sha512-KK15oKpabNDaLpWinMtNfTqy/V7pzlc2FRG174PfASes7RRx6TAsua8HJdRTKo8+BLvPBKNIkL7kXWcz5HoqqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="map-poverty.js"></script>
+<script src="map-rural.js"></script>
 <script src="parallel.js"></script>
 <script src="multiring.js"></script>
-<script src="area-chart.js" type="module"></script>
-<script src="horizontal-bar.js" type="module"></script>
-<script src="map-rural.js"></script>
+<script src="area-chart.js"></script>
+<script src="horizontal-bar.js"></script>
 <script src="treemap.js"></script>
 </html>
