@@ -49,17 +49,18 @@ h3{
     text-align: center;
 }
 
-
-
 .section{
     font-weight: 600;
     font-size: 35px;
+    text-align: left;
 }
+
 
 p{
     text-align: left;
     margin:2em;
     font-size: 18px;
+    color: rgb(86, 85, 85);
 }
 
 .legend{
@@ -99,6 +100,7 @@ br{
 
 #job-chart-parent{
     display:flex;
+    margin-left:2em;
 }
 
 #job-chart-parent h3{
@@ -204,10 +206,6 @@ tspan{
     text-align: center;
 }
 
-.section{
-    text-align: left;
-}
-
 #horizontal-desc{
     margin-top: 1em;
     font-size: 55px;
@@ -285,21 +283,13 @@ tspan{
     margin-top:1em;
 }
 
-.annotation-group tspan{
-    fill:rgb(86, 85, 85);
-    font-weight: 400;
-    font-size:14px;
-    width:200;
-    /* inline-size: 10px;  */
-    overflow-wrap: break-word; 
-    overflow: hidden;
-    border-style: solid red;
+
+#legend1 text{
+    color: rgb(70, 69, 69);
+    font-weight: 500;
 }
 
-.annotation-group text {
-    font-size: 18px;
-    fill: red;
-    color:red;
-    background-color: red;
-    border-style: solid red;
+#legend5 text{
+    color: rgb(70, 69, 69);
+    font-weight: 500;
 }
