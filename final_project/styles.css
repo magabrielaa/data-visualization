@@ -152,13 +152,14 @@ tspan{
 
 
 #chart5 div {
-    color:black;
+    color:rgb(86, 85, 85);
     box-sizing:border-box;
     border:solid 1px #fff;
     padding: 30px;
     display: inline-block;
     
 }
+
 
 #gender-prop-parent{
     display:flex;
@@ -282,4 +283,23 @@ tspan{
 
 #chart3{
     margin-top:1em;
+}
+
+.annotation-group tspan{
+    fill:rgb(86, 85, 85);
+    font-weight: 400;
+    font-size:14px;
+    width:200;
+    /* inline-size: 10px;  */
+    overflow-wrap: break-word; 
+    overflow: hidden;
+    border-style: solid red;
+}
+
+.annotation-group text {
+    font-size: 18px;
+    fill: red;
+    color:red;
+    background-color: red;
+    border-style: solid red;
 }

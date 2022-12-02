@@ -7,9 +7,9 @@ d3.json("data/ssn_perc.json").then((data) => {
   });
   
   function createRing({ gender, values }) {
-    const height = 450,
+    const height = 400,
       color = (gender === "MALE") ? d3.schemePaired[7] : d3.schemePaired[8],
-      width = 450,
+      width = 400,
       innerRadius = 80,
       outerRadius = 150,
       labelRadius = 185;

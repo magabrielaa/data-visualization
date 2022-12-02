@@ -7,8 +7,6 @@ d3.json("data/series.json").then(data => {
         for (let d of data) {
             d.Year = timeParse(d.Year)
         }
-
-        console.log(data)
     
         let chart = StackedAreaChart(data, {
             x: d => d.Year,
@@ -140,6 +138,25 @@ function StackedAreaChart(data, {
     d3.select("#legend")
       .append("div")
       .node().innerHTML = swatchHTML; //set inner HTML to result of swatch
+
+    // add annotation to the chart
+    const annotations = [
+      {
+      note: {
+        label: "Poverty peaked at all levels on 2020",
+        wrap: 0,  
+         align: "left"
+      },
+      color: ["rgb(86, 85, 85)"],
+      x: 420,
+      y: 80,
+    }
+    ]
+
+    const makeAnnotations = d3.annotation()
+      .annotations(annotations)
+    svg.append("g")
+      .call(makeAnnotations)
 
     return Object.assign(svg.node(), {scales: {color}});
   }
