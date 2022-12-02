@@ -77,27 +77,3 @@ Promise.all([
         });
     
 })
-
-
-// d3.csv("data/provinces_clean.csv").then(data => { 
-// // getMax(data) 
-// console.log("THIS IS MY DATA", data)
-// max_val = getMax(data, "poor_total_norm")
-// console.log("THIS IS THE MAX", max_val)
-// })
-
-
-// function getMax(data, field) {
-
-//   let max = 0
-//   for (let d of data) {
-//     d.poor_total_norm = +d.poor_total_norm;
-//   }
-  
-//   data.forEach(d => {
-//       if (d[field] > max) {
-//           max = d[field]
-//       }
-//   })
-//   return max
-// }
