@@ -8,7 +8,9 @@ body{
     margin:auto;
     text-align: center;
     margin:2em;
+    background-color: rgb(220, 215, 215);
 }
+
 
 h1{
     margin:2em;
@@ -72,6 +74,7 @@ p{
 
 .c3-header span{
     color: rgb(202, 178, 214);
+    -webkit-text-stroke: 0.4px rgb(86, 85, 85);
     font-weight: 800;
 }
 
@@ -91,6 +94,10 @@ br{
 
 .pie-label{
     font-weight: 600;
+}
+
+.pie-label text{
+    color: red;
 }
 
 .desc-label{
@@ -232,3 +239,19 @@ tspan{
     -webkit-box-shadow: 2px 4px 16px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 4px 16px 0px rgba(0,0,0,0.75);
   }
+
+.highlight{
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(86, 85, 85);
+}
+
+.highlight-2{
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(86, 85, 85);
+}
+
+#chart3{
+    margin-top:1em;
+}

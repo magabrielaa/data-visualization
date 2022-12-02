@@ -14,7 +14,7 @@ d3.csv("data/ethnicity.csv").then(data => {
         width:650,
         height: 600,
         xLabel: "Counts →",
-        color: "#ccc", //general gray color for all bars
+        color: "#ccc", 
       })
 
       document.getElementById("chart8").appendChild(chart) //append to DOM
@@ -101,6 +101,7 @@ function BarChart(data, {
       .data(I)
       .join("rect")
         .attr("fill", d => (data[d].ethnicity === "Indigenous") ? d3.schemePaired[2] : color) // fill in color only for Indigenous category
+        .attr("stroke", "white") //set bar border to white
         .attr("x", xScale(0))
         .attr("y", i => yScale(Y[i]))
         .attr("width", i => xScale(X[i]) - xScale(0))

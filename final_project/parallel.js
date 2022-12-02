@@ -10,7 +10,6 @@ const svg = d3.select("#chart3")
   .attr("height", height)
   .attr("viewBox", [0, 0, width, height]);
 
-// d3.csv("data/ssn_gender.csv").then((data) => {
 d3.csv("data/jobs_by_gender.csv").then((data) => {
 
   for (let d of data) {
@@ -18,11 +17,8 @@ d3.csv("data/jobs_by_gender.csv").then((data) => {
   }
 
   let genders = [...new Set(data.map(d => d.source))]; //spread syntax
-  // console.log("genders", genders); // males and females on left-hand side
-
+  
   let graph = nodeLinkData(data, ["source", "target"]); // helper function nodeLinkData below
-
-  // console.log(graph, data);
 
   let sankey = d3.sankey() //sets up function used later to modify data
     .nodeWidth(nodeWidth)
@@ -36,7 +32,7 @@ d3.csv("data/jobs_by_gender.csv").then((data) => {
     .range([d3.schemePaired[8], d3.schemePaired[7]])
     .domain(genders);
 
-  const { nodes, links } = sankey(graph); // modifies and returns graph. Object destructuring syntax
+  const { nodes, links } = sankey(graph); // modifies and returns graph, object destructuring syntax
 
   svg.append("g") // turns node data into rectangles on the sides
     .selectAll("rect")
@@ -46,6 +42,7 @@ d3.csv("data/jobs_by_gender.csv").then((data) => {
     .attr("y", d => d.y0)
     .attr("height", d => d.y1 - d.y0)
     .attr("width", d => d.x1 - d.x0)
+    .style("fill", "rgb(86, 85, 85)")
     .append("title")
     .text(d => d.name);
 
@@ -67,7 +64,7 @@ d3.csv("data/jobs_by_gender.csv").then((data) => {
       d3.select(this)
         .attr("opacity", 0.75);
     })
-    .on("click", function(e, d) { //on click, changes the message at the top, CANNOT BE AN ARROW FUNCTION**
+    .on("click", function(e, d) { //on click, changes the message at the top
       let str = `${d.value.toLocaleString()} ${d.source.name}S  under poverty <br> are  ${d.target.name}`; //toLocaleString adds commas to number
       d3.select(".c3-header") //selects H2 element on the HTML and adds string
         .html(str);
@@ -78,18 +75,23 @@ d3.csv("data/jobs_by_gender.csv").then((data) => {
   // Text elements below
   svg.append("g")
     .style("font-weight", "bold")
+    .attr("fill", "rgb(86, 85, 85)")
+    .attr("font-size", 19)
     .append("text")
     .attr("x", 0)
     .attr("y", 16)
-    .text("Gender");
+    .text("GENDER");
 
   svg.append("g")
+    .attr("class", "parallel-label")
+    .attr("fill", "rgb(86, 85, 85)")
     .style("font-weight", "bold")
+    .attr("font-size", 19)
     .append("text")
     .attr("x", width - margin.left)
-    .attr("y", 16)
+    .attr("y", 20)
     .attr("text-anchor", "end")
-    .text("Employment Type");
+    .text("EMPLOYMENT TYPE");
 
   svg.append("g")
     .selectAll("text")

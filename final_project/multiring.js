@@ -49,10 +49,10 @@ d3.json("data/ssn_perc.json").then((data) => {
       .attr("font-size", 16)
       .attr("class", "desc-label")
       .attr("text-anchor", "middle")
+      .style("fill", "rgb(86, 85, 85)")
       .selectAll("text")
       .data(arcs)
       .join("text")
-      .attr("fill", d => console.log(d))
       .attr("transform", d => "translate("+ `${arcLabel.centroid(d)}` + ")")
       .selectAll("tspan")
       .data(d => {
@@ -70,6 +70,7 @@ d3.json("data/ssn_perc.json").then((data) => {
       .attr("text-anchor", "middle")
       .attr("alignment-baseline", "middle")
       .attr("class", "pie-label")
+      .style("fill", "rgb(86, 85, 85)")
       .text(gender)
       .style("font-size", 20);
   }

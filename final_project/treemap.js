@@ -33,7 +33,7 @@ d3.csv("data/ethnicity_counts2.csv").then(data => {
         .attr('y', function (d) { return d.y0; })
         .attr('width', function (d) { return d.x1 - d.x0; })
         .attr('height', function (d) { return d.y1 - d.y0; })
-        .style("stroke", "black")
+        .style("stroke", "white")
         .style("fill", function(d) {
             if (d.id == "Indigenous"){
               return d3.schemePaired[2]
@@ -41,7 +41,6 @@ d3.csv("data/ethnicity_counts2.csv").then(data => {
               return "#ccc"
             }
           })
-
 
     svg
         .selectAll("text")
