@@ -144,7 +144,7 @@ tspan{
     margin-top:3em;
 }
 
-#chart4{
+#ring-charts{
     flex-basis: 70%;
 }
 
@@ -357,4 +357,13 @@ h4{
     padding:3em;
     font-size:20px;
     font-weight: 600;
+}
+
+.source{
+    font-size:16px;
+}
+
+.source-map{
+    font-size:16px;
+    height:50px;
 }
