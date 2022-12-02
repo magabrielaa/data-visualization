@@ -1,23 +1,4 @@
-import {Runtime} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import d3_colorLegend from "https://api.observablehq.com/@d3/color-legend.js?v=3"
-
-const color = d3.scaleOrdinal()
-    .domain(["National","Urban", "Rural"])
-    .range(d3.schemePaired)
-
-const container = document.querySelector("#legend")
-renderSwatches(container)
-
-async function renderSwatches(el) {
-    // Get the value of the "swatches" function that returns a DOM element
-    const module = new Runtime().module(d3_colorLegend);
-    const swatches = await module.value("swatches");
-    
-    // Finally, call `swatches` with our options and append it to the container
-    const element = swatches({color, marginLeft: margin.left, columns: "100px"});
-    el.appendChild(element);
-  }
-
+// Area Chart of poverty rates, by National, Urban, and Rural levels
 
 d3.json("data/series.json").then(data => { 
     
@@ -35,8 +16,6 @@ d3.json("data/series.json").then(data => {
             height: 500,
             yLabel: "↑ Poverty (%)",
           })
-      
-        //   Swatches(d3.scaleOrdinal(["blueberries", "oranges", "apples"], d3.schemeCategory10))
     
           document.getElementById("chart6").appendChild(chart) //append to DOM
         })
@@ -142,16 +121,13 @@ function StackedAreaChart(data, {
     svg.append("g")
         .attr("transform", `translate(0,${height - marginBottom})`)
         .call(xAxis);
-    
 
-    // d3.select("#legend")
-    //     .node()
-    //     .appendChild(
-    //         Swatches(
-    //             (d3.scaleOrdinal(["National", "Urban", "Rural"], d3.schemeCategory10))
-    
-    //         )
-    //     )
+    //Build discrete color legend using Swatches function
+    let swatchHTML = Swatches(d3.scaleOrdinal(Z, d3.schemePaired)); //passes scale ordinal with the data: Z (which already contains the categories)
+      
+    d3.select("#legend")
+      .append("div")
+      .node().innerHTML = swatchHTML; //set inner HTML to result of swatch
 
     return Object.assign(svg.node(), {scales: {color}});
   }
