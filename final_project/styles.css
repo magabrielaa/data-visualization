@@ -9,6 +9,7 @@ body{
     text-align: center;
     background-color: rgb(220, 215, 215);
     width:1300px;
+    color: rgb(70, 69, 69);
 }
 
 
@@ -199,6 +200,7 @@ tspan{
 
 #bar-chart-parent{
     display:flex;
+    margin-left:1em;
 }
 
 .horizontal-bar h2 {
@@ -292,4 +294,67 @@ tspan{
 #legend5 text{
     color: rgb(70, 69, 69);
     font-weight: 500;
+}
+
+#recommendations{
+    width:30%;
+}
+
+#recommendations-1{
+    width:50%;
+}
+
+hr{
+    margin:1.5em;
+    border-top: 3px solid white;
+}
+
+.italic{
+    font-style: italic;
+}
+
+ul li {
+    list-style-type: square;
+    padding:0.2em;
+    text-align:left;
+    font-size:18px;
+}
+
+ul{
+    margin-left:1em;
+}
+
+li::marker{
+    color:white;
+    font-size: 1.2em;
+}
+
+#sub-title{
+    background-color: rgb(220, 215, 215);
+    box-shadow: 0px 0px #888888;
+    text-align: left; 
+}
+
+#process{
+    display:flex;
+}
+
+#col1{
+    flex-basis:47%;
+}
+
+#col2{
+    flex-basis:47%;
+}
+
+h4{
+    margin:0.4em;
+    
+}
+
+.course{
+    margin-top:1em;
+    padding:3em;
+    font-size:20px;
+    font-weight: 600;
 }

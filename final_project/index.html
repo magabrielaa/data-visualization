@@ -10,7 +10,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <span class="course">CAPP30239 Final Project</span>
+    <span>|</span>
+    <span class="course">Fall 2022</span>
+    <span>|</span>
+    <span class="course">Gabriela Ayala</span>
+    <br>
+    <br>
     <h1>Rising Poverty in Ecuador: <br><span id="subheader">Indigenous Peoples and Females at Risk</span></h1>
+    <br>
+
+    <hr>
     <h2 class="section">The pandemic reverted a 10 year decline in poverty</h2>
     <div id="line-parent">
         <div id="line-desc">
@@ -28,6 +38,7 @@
             <div id="chart6" class="chart-container"></div>
         </div>
     </div>
+    <hr>
     <h2 class="section">Let's look at the geographical distribution of poverty</h2>
     <div id="container">
         <div id="map-parent">
@@ -50,7 +61,7 @@
                 </p>
             </div>
         </div>
-        <br>
+        <hr>
         <h2 class="section">Indigenous peoples are gravely affected by extreme poverty</h2>
         <div id="bar-chart-parent">
             <div id="treemap">
@@ -69,6 +80,7 @@
                 </p>
             </div>
         </div>
+        <hr>
         <h2 class="section">How is poverty distributed by gender?</h2>
         <div id="gender-prop-parent">
             <div id="gender-desc">
@@ -81,6 +93,7 @@
                 <div style="width:49.28%;background-color: rgb(255, 127, 0);float:right;"><span>MALE</span><br />49.28%</div>
             </div>
         </div>
+        <hr>
         <h2 class="section">What about types of employment by gender?</h2>
         <div id="job-chart-parent">
             <div class="col">
@@ -100,6 +113,7 @@
                     and social protection.</p>
             </div>
         </div>
+        <hr>
         <h2 class="section">More females in poverty lack access to social security</h2>
         <div id="ring-parent">
             <div id="ring-desc">
@@ -110,7 +124,87 @@
             <div id="chart4" class="chart-container"></div>
         </div>
         </div>
-    </div>   
+    </div>  
+    <div>
+        <hr>
+        <h2 class="section">The bottom line</h2>
+        <h3 id="recommendations">Social Policy Recommendations</h3>
+    </div> 
+    <hr>
+    <h2 class="section">The story behind the process</h2>
+    <div id="process">
+        <div id="col1">
+            <h3 id="recommendations-1">My interest in the topic</h3>
+            <p>Growing up in Ecuador, I have witnessed the decline in extreme poverty over the last two decades. This decline was a result
+                of both economic growth (due to an increase in oil production in the 2010's), as well as social policy oriented to promote
+                upward social mobility. Policy examples include Conditional Cash Transfers, housing bonds, and bonds for people with
+                disabilities living in poverty, among others.</p>
+            <p>Since 2018, Ecuador was already facing several macroeconomic hardships, including a recession and an unprecedented level of
+                public debt. The pandemic led to a <span class="italic">“deep recession that had a major impact  on growing poverty levels in
+                Ecuador.”</span> <a href="https://www.worldbank.org/en/country/ecuador/overview">(World Bank)</a> Ecuador is one of the
+                countries hit hardest by the pandemic. According to the World Health Organization, in terms of confirmed deaths per million
+                habitants, <span class="italic">"Ecuador ranks fourth in the Americas and ninth worldwide."</span>
+                <a href="https://www.ijidonline.com/article/S1201-9712(20)32567-4/fulltext">(WHO, October 2022)</a>
+            </p>
+            <p>As an Ecuadorian interested in social policy, I find these reports very alarming. The economic hardship remains now a common
+                dinner table topic back home and I thought this project would be a good opportunity to explore data on poverty and understand
+                not only how it has evolved over time, but also which groups are most affected.</p>
+            <h3 id="recommendations">About the data</h3>
+            <p>The main data source I used for this project is the <a href="https://www.datosabiertos.gob.ec/dataset/conjunto-de-datos-personas-del-registro-social">
+                Social Registry</a>: a government registry that was created to record people and households living under poverty in order to provide them with
+                access to social protection programmes. This information has historically been reserved for institutional use. However, since Ecuador joined the
+                <a href="https://www.opengovpartnership.org/members/ecuador/"> Open Government Partnership</a> in July 2018, an <a href="https://www.datosabiertos.gob.ec">
+                Open Data Portal</a> has been recently launched, which now makes the data available to the public.</p>
+            <p>I opted for the Social Registry data for the following reasons:</p>
+            <ul>
+                <li>Official source</li>
+                <li>Updated to 2021</li>
+                <li>Largest dataset containing population living under poverty</li>
+                <li>Anonimized data covering 3.2 million people</li>
+                <li>Clean, well-structured data</li>
+            </ul>
+            <p>Other data options for this topic include the statistical reports from the National Institute of Statistics and Census (INEC), which I do use
+                complementarily. For example, I used <a href="https://www.ecuadorencifras.gob.ec/pobreza-junio-2022/">series data on poverty rates</a> from INEC's tabulated
+                datasets for the area chart, and <a href="https://www.ecuadorencifras.gob.ec/informacion-censal-cantonal/">data on rural households</a> by province.
+            </p>
+            <h3 id="sub-title">Data Caveat</h3>
+            <p>The main limitation from this dataset is that it only contains observations of people under poverty who at some point self-registered or were registered
+                by a third party in the Social Registry. Even though it is the most complete data available, it is not a 100% comprehensive of all people living under poverty
+                in Ecuador. This means the reality may be much harsher, in particular for families who live in remote areas and cannot access social services.</p>
+        </div>
+        <div id="col2">
+            <h3 id="recommendations">The Story</h3>
+            <p>At the beginning, I was interested in a profile of poverty in Ecuador but I was not sure which way the story would go. I wanted to define the story
+                from the patterns I could identify in the data. This meant that I had to try a lot of different charts to visualize what poverty looked like at different
+                levels: urban vs. rural, and by categories such as gender and ethnicity. Ultimately, I opted to focus on the <b>disparity among the poor</b> and came to realize
+                that indigenous peoples are by far the most severely group affected by extreme poverty, as well as females. The degree of this disparity was a shocking result
+                and one that I have not seen highlighted in the news or by NGO's.
+            </p>
+            <h3 id="recommendations">Chart Selections</h3>
+            <p>My goal was to balance using a varied selection of charts, while also communicating the story clearly. I used an <b>area chart</b> to visualize poverty rates
+               by levels because it emphasized that the rural proportion of poverty is larger. I included a vertical line and an annotation to direct the viewer to the poverty
+               rate peak in 2020.</p>
+            <p>The <b>maps</b> were used to show a clear relationship between the provinces with the highest poverty concentrations and those with the most rural households. It
+                helps to further emphasize the point that rural poverty accounts for most poverty in the country. The fact that each map comes from a different data source and shows
+                this visual correlation, gives more credence to the story. </p>
+            <p>I used the <b>treemap</b> and <b>horizontal chart</b> side-by-side to draw attention to the main point of the story: that even though indigenous peoples are a
+               minority, they are the demographic group most gravely affected by extreme poverty. I also decided to color only the "Indigenous" category to highlight this
+               comparison.</p>
+            <p>For the section on <b>gender</b>, I employed color scheme consistency through the different graphs so the viewer would associate females and males more easily. The
+                <b>parallel chart</b> was handy to compare the precariousness between females and males. Since there are only two categories on the left, I thought it would be
+                manageable for the viewer to follow the story through this graph. This was also the reason I chose <b>pie charts</b> to compare access to social security by gender.
+                It's easier to make the point of no access to social security, without further categories that make a pie chart difficult to read.
+            </p>
+            <h3 id="recommendations">Challenges</h3>
+            <p>On the data processing side, one of the challenges was translating all the datasets from Spanish to English, in particular for specific terms that are context-specific,
+                such as the categorization used for employment types by the National Statistics Insitute.
+            </p>
+            <p>On the coding side, I had some difficulty with the legends, ie. finding the right buckets for the map legends and 
+                getting the Swatches function to to work. The maps also required adjustment because the projection did not render them visible in the first attempts.
+            </p>
+            <p>Overall, it was a good learning experience on how to use D3.js and communicate a story clearly.</p>
+        </div>
+    </div>
 </body>
 <script src="data/d3-color-legend.js"></script>
 <script src="https://d3js.org/d3.v7.min.js"></script>
