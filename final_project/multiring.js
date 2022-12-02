@@ -1,6 +1,6 @@
 // Multiring comparison of access to social security, by gender
 
-d3.json("data/ssn.json").then((data) => {
+d3.json("data/ssn_perc.json").then((data) => {
     for (let d of data) {
       createRing(d);
     }
@@ -26,9 +26,6 @@ d3.json("data/ssn.json").then((data) => {
       .attr("height", height)
       .attr("viewBox", [-width / 2, -height / 2, width, height])
       .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
-    
-    // var color = d3.scaleOrdinal()
-    //   .range([d3.schemePaired[1], d3.schemePaired[3]]);
   
     svg.append("g")
       .attr("stroke", "white")
@@ -39,9 +36,8 @@ d3.json("data/ssn.json").then((data) => {
       .attr("opacity", 0.5)
       .join("path")
       .attr("class", "pie-color")
-      .style("fill", function(d) {
-        console.log(d.data.category)
-        if (d.data.category == "No Access"){
+      .style("fill", function(d) { // fill with color only for "No Access" category, otherwise gray
+        if (d.data.category == "Access"){
           return "#ccc"
         } else {
           return color
@@ -56,10 +52,11 @@ d3.json("data/ssn.json").then((data) => {
       .selectAll("text")
       .data(arcs)
       .join("text")
-      .attr("transform", d => `translate(${arcLabel.centroid(d)})`)
+      .attr("fill", d => console.log(d))
+      .attr("transform", d => "translate("+ `${arcLabel.centroid(d)}` + ")")
       .selectAll("tspan")
       .data(d => {
-        return [d.data.category, d.data.amount.toLocaleString()];
+        return [d.data.category, d.data.amount.toLocaleString()+ "%"]; //add percentage sign to label
       })
       .join("tspan")
       .attr("x", 0)
