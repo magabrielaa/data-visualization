@@ -7,7 +7,7 @@ body{
     font-family: 'Lato', sans-serif;
     margin:auto;
     text-align: center;
-    background-color: rgb(220, 215, 215);
+    background-color: rgb(229, 223, 223);
     width:1300px;
     color: rgb(70, 69, 69);
 }
@@ -45,8 +45,8 @@ h3{
     color:rgb(86, 85, 85);
     background-color: rgb(238, 237, 237);
     box-shadow: 2px 5px #888888;
-    width:60%;
-    padding:0.3em;
+    width: max-content;
+    padding:0.4em;
     text-align: center;
 }
 
@@ -112,6 +112,20 @@ br{
     margin:2em;
     margin-top:8em;
     text-align: center;
+    border-radius: 25px;
+    border: 7px solid rgb(202, 178, 214);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height:500px;
+    margin-left:2em;
+    margin-right:0em;
+}
+
+#right-col h3{
+    margin-bottom:2.5em;
+}
+
+#right-col p{
+    margin-left:2.5em;
 }
 
 .pie-label{
@@ -142,6 +156,10 @@ tspan{
 #ring-desc{
     flex-basis:30%;
     margin-top:3em;
+    border-radius: 25px;
+    border: 7px solid rgb(202, 178, 214);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height:250px;
 }
 
 #ring-charts{
@@ -153,7 +171,6 @@ tspan{
     flex-basis:30%;
 }
 
-
 #chart5 div {
     color:rgb(86, 85, 85);
     box-sizing:border-box;
@@ -163,18 +180,27 @@ tspan{
     
 }
 
-
 #gender-prop-parent{
     display:flex;
 }
 
 #gender-desc{
-    flex-basis:40%;
+    flex-basis:45%;
+    border-radius: 25px;
+    border: 7px solid rgb(202, 178, 214);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height:200px;
+    margin-left:1em;
+}
+
+#gender-desc p{
+    margin:1.5em;
 }
 
 #chart5{
     margin-top:2em;
-    flex-basis:50%;
+    flex-basis:55%;
+    margin-left:1.5em;
 }
 
 #chart5 span{
@@ -189,13 +215,17 @@ tspan{
     font-size: 14px;
 }
 
-#line-parent{
+#area-parent{
     display:flex;
 }
 
-#line-desc{
+#area-desc{
     flex-basis:35%;
     margin-top: 1em;
+    border-radius: 25px;
+    border: 7px solid rgb(178, 223, 138);
+    height:650px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 #bar-chart-parent{
@@ -210,23 +240,33 @@ tspan{
 
 #horizontal-desc{
     margin-top: 1em;
+    margin-left:1em;
     font-size: 55px;
     flex-basis:24%;
+    border-radius: 25px;
+    border: 7px solid rgb(178, 223, 138);
+    height:400px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 
 #horizontal-desc h3{
-    margin-left: 2em;
+    text-align:left;
+    margin-bottom:2.5em;
+    margin-right:0.8em;
+    margin-left:0.8em;
+    margin-top:1.5em;
 }
 
+
 #horizontal-bar{
-    flex-basis:38%;
+    flex-basis:37%;
     margin-left:0.5em;
 }
 
 
 #treemap{
-    flex-basis: 38%;
+    flex-basis: 37%;
 }
 
 
@@ -244,12 +284,8 @@ tspan{
     margin-left:1em;
 }
 
-#horizontal-desc p{
-    margin:3em;
-}
-
 .map-tooltip{
-    background: rgba(255, 255, 255, .9); /* 0.9 gives slight transparency */
+    background: rgba(255, 255, 255, .9); 
     border-radius: 8px;
     color: #000;
     display: block;
@@ -272,13 +308,6 @@ tspan{
 .highlight{
     font-weight: bold;
     font-size: 25px;
-    color: rgb(86, 85, 85);
-}
-
-.highlight-2{
-    font-weight: bold;
-    font-size: 20px;
-    color: rgb(86, 85, 85);
 }
 
 #chart3{
@@ -286,22 +315,8 @@ tspan{
 }
 
 
-#legend1 text{
-    color: rgb(70, 69, 69);
+.legend{
     font-weight: 500;
-}
-
-#legend5 text{
-    color: rgb(70, 69, 69);
-    font-weight: 500;
-}
-
-#recommendations{
-    width:30%;
-}
-
-#recommendations-1{
-    width:50%;
 }
 
 hr{
@@ -309,9 +324,6 @@ hr{
     border-top: 3px solid white;
 }
 
-.italic{
-    font-style: italic;
-}
 
 ul li {
     list-style-type: square;
@@ -330,7 +342,7 @@ li::marker{
 }
 
 #sub-title{
-    background-color: rgb(220, 215, 215);
+    background-color: rgb(229, 223, 223);
     box-shadow: 0px 0px #888888;
     text-align: left; 
 }
@@ -371,9 +383,29 @@ h4{
 
 #course-desc{
     background-color: #888888;
-    /* width:92%; */
     text-align: center;
     margin-left:2em;
     margin-right:2em;
     box-shadow: 3px 2px #6e6d6d;
+}
+
+#maps-desc{
+    border-radius: 25px;
+    border: 7px solid rgb(178, 223, 138);
+    width:1200px;
+    margin:auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#recs-parent{
+    display:flex;
+}
+
+#conclusion{
+    border-radius: 25px;
+    border: 7px solid rgb(86, 85, 85);
+    width:1200px;
+    margin:auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-bottom:3em;
 }
