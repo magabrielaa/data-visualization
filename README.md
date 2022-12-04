@@ -47,7 +47,7 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 
 
 ### Week 10
-- [Final Project](https://magabrielaa.github.io/CAPP30239_FA22/final_project/index.html): Rising Poverty in Ecuador:
+- [Final Project](https://magabrielaa.github.io/CAPP30239_FA22/final_project/index.html)- Rising Poverty in Ecuador:
 Indigenous Peoples and Females at Risk
 
 
