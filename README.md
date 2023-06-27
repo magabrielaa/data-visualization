@@ -6,6 +6,15 @@ This is my repository for my Data Visualization for Policy Analysis course. It w
 ## Goal
 To acquire data visualization 📊 📈 📉 skills that can be used to engage people with challenging public policy and social impact issues. I am interested in data story-telling from an accessible standpoint that can reach a variety of audiences. 
 
+## Final Project
+
+- [Final Project](https://magabrielaa.github.io/data-visualization/final_project/index.html)- Rising Poverty in Ecuador:
+Indigenous Peoples and Females at Risk
+
+
+https://github.com/magabrielaa/data-visualization/assets/90418921/e89dc873-1e00-4279-9a43-618c2483c6ed
+
+
 ## Weekly Assignments
 
 ### Week 1
@@ -44,12 +53,5 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 
 ### Week 6
 - [Three charts](https://magabrielaa.github.io/data-visualization/week_06/homework/index.html) of fatal use of police force in the US (2015)
-
-
-### Week 10
-- [Final Project](https://magabrielaa.github.io/data-visualization/final_project/index.html)- Rising Poverty in Ecuador:
-Indigenous Peoples and Females at Risk
-
-
 ## Contact
 Feel free to contact me through [LinkedIn](https://www.linkedin.com/in/mariagabrielaayala/)!
