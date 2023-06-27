@@ -19,31 +19,31 @@ To acquire data visualization 📊 📈 📉 skills that can be used to engage p
 - **Project #1:** For my *Dear Data* project, I tracked the sounds 🔉🔔🔉 around me for 5 days and manually created a [humanistic data visualization](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/week_02)
 
 ### Week 3
-- D3.js in-class tutorial, my first [bar chart](https://magabrielaa.github.io/CAPP30239_FA22/week_03/index.html)
+- D3.js in-class tutorial, my first [bar chart](https://magabrielaa.github.io/data-visualization/week_03/index.html)
     
-- **Homework assignment:** [Library visits bar chart](https://magabrielaa.github.io/CAPP30239_FA22/week_03/homework.html) 📊 on Chicago library visits in January 2022
+- **Homework assignment:** [Library visits bar chart](https://magabrielaa.github.io/data-visualization/week_03/homework.html) 📊 on Chicago library visits in January 2022
 
-- **Final Project Data:** The data I scoped and pre-processed for my Final Project is on the characteristics of people living under moderate and extreme poverty in my homecountry, Ecuador. Further detail [here](https://github.com/magabrielaa/CAPP30239_FA22/tree/main/data)
+- **Final Project Data:** The data I scoped and pre-processed for my Final Project is on the characteristics of people living under moderate and extreme poverty in my homecountry, Ecuador. Further detail [here](https://github.com/magabrielaa/data-visualization/tree/main/data)
 
 ### Week 4
-- [Horizontal bar chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/horizontal-bar.html) next to the bar chart created in week 3
+- [Horizontal bar chart](https://magabrielaa.github.io/data-visualization/week_04/horizontal-bar.html) next to the bar chart created in week 3
 
 - Time series charts
 
-    - [Line chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/line.html) of US long-term interest rates
+    - [Line chart](https://magabrielaa.github.io/data-visualization/week_04/line.html) of US long-term interest rates
 
-    - [Area chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/area.html) of US long-term interest rates
+    - [Area chart](https://magabrielaa.github.io/data-visualization/week_04/area.html) of US long-term interest rates
     
-    - [Multiline chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/multiline.html) of G7's long-term interest rates
+    - [Multiline chart](https://magabrielaa.github.io/data-visualization/week_04/multiline.html) of G7's long-term interest rates
 
-    - **Homework assignment:** [Line chart](https://magabrielaa.github.io/CAPP30239_FA22/week_04/homework.html) of Canada's monthly long-term interest rates in 2020
+    - **Homework assignment:** [Line chart](https://magabrielaa.github.io/data-visualization/week_04/homework.html) of Canada's monthly long-term interest rates in 2020
 
 ### Week 5
-- [Histogram](https://magabrielaa.github.io/CAPP30239_FA22/week_05/histogram-annotation.html) of the weather by month in Chicago (2022)
-- [Scatterplot](https://magabrielaa.github.io/CAPP30239_FA22/week_05/scatterplot.html) of the distribution of penguin weight by flipper length
+- [Histogram](https://magabrielaa.github.io/data-visualization/week_05/histogram-annotation.html) of the weather by month in Chicago (2022)
+- [Scatterplot](https://magabrielaa.github.io/data-visualization/week_05/scatterplot.html) of the distribution of penguin weight by flipper length
 
 ### Week 6
-- [Three charts](https://magabrielaa.github.io/CAPP30239_FA22/week_06/homework/index.html) of fatal use of police force in the US (2015)
+- [Three charts](https://magabrielaa.github.io/data-visualization/week_06/homework/index.html) of fatal use of police force in the US (2015)
 
 
 ### Week 10
